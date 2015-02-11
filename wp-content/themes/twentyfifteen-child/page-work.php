@@ -34,7 +34,11 @@
                 <?php while( $workDetails->fetch()) { ?>
                 <div class="thirds">
                     <a href="<?php echo get_site_url(); ?>/work/<?php echo $workDetails->display('slug')?>">
-                        <img src="<?php echo $workDetails->display('front_thumbnail_image')?>"/>
+                        <div class="slides">
+                            <img src="<?php echo $workDetails->display('front_thumbnail_image')?>"/>
+                            <img class="secondary" src="<?php echo $workDetails->display('first_image')?>"/>
+                            <img class="secondary" src="<?php echo $workDetails->display('second_image')?>"/>
+                        </div>
                         <h3><?php echo $workDetails->display('title')?></h3>
                         <p><?php echo $workDetails->display('type_of_project')?></p>
                     </a>

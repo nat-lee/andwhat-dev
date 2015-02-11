@@ -1042,18 +1042,18 @@ nav#mm-menu ul li a {
   width: 42.916666%;
   margin: 40px auto 100px auto;
 }
-.wrapper .work-thumbnails .slides {
+.wrapper .work-thumbnails .slides, .wrapper .more-work .slides {
   z-index: 0;
   overflow: hidden;
 }
-.wrapper .work-thumbnails .thirds {
+.wrapper .work-thumbnails .thirds, .wrapper .more-work .thirds {
   margin: 45px 0 10px 0;
 }
-.wrapper .work-thumbnails .thirds img {
+.wrapper .work-thumbnails .thirds img, .wrapper .more-work .thirds img {
   min-height: 100%;
   height: auto;
 }
-.wrapper .work-thumbnails .thirds img.secondary {
+.wrapper .work-thumbnails .thirds img.secondary, .wrapper .more-work .thirds img.secondary {
   display: none;
 }
 

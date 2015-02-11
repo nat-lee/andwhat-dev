@@ -68,7 +68,11 @@
                 <?php while( $moreWork->fetch()) { ?>
                 <div class="thirds">
                     <a href="<?php echo get_site_url(); ?>/work/<?php echo $moreWork->display('slug')?>">
-                        <img src="<?php echo $moreWork->display('front_thumbnail_image')?>"/>
+                        <div class="slides">
+                            <img src="<?php echo $moreWork->display('front_thumbnail_image')?>"/>
+                            <img class="secondary" src="<?php echo $moreWork->display('first_image')?>"/>
+                            <img class="secondary" src="<?php echo $moreWork->display('second_image')?>"/>
+                        </div>
                         <h3><?php echo $moreWork->display('title')?></h3>
                         <p><?php echo $moreWork->display('type_of_project')?></p>
                     </a>
