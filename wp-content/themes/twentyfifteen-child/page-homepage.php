@@ -21,9 +21,13 @@ $params = array(
             <h2>Latest Work</h2>
             <div class="work-thumbnails clear">
                 <?php while( $latestWork->fetch()) { ?>
-                <div class="thirds">
+                <div class="thirds ">
                     <a href="<?php echo get_site_url(); ?>/work/<?php echo $latestWork->display('slug')?>">
-                        <img src="<?php echo $latestWork->display('front_thumbnail_image')?>"/>
+                        <div class="slides">
+                            <img src="<?php echo $latestWork->display('front_thumbnail_image')?>"/>
+                            <img class="secondary" src="<?php echo $latestWork->display('first_image')?>"/>
+                            <img class="secondary" src="<?php echo $latestWork->display('second_image')?>"/>
+                        </div>
                         <h3><?php echo $latestWork->display('title')?></h3>
                         <p><?php echo $latestWork->display('type_of_project')?></p>
                     </a>

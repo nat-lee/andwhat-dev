@@ -42,6 +42,7 @@ function twentyfifteenchild_scripts() {
     wp_enqueue_script( 'fancybox', get_stylesheet_directory_uri() . '/js/fancybox/jquery.fancybox.js', array(), '2.1.5', true );
     wp_enqueue_script( 'mmenu', get_stylesheet_directory_uri() . '/js/mmenu/jquery.mmenu.min.all.js', array(), '4.7.5', true );
     wp_enqueue_script( 'waypoints', get_stylesheet_directory_uri() . '/js/jquery.waypoints.min.js', array(), '3.1.1', true );
+    wp_enqueue_script( 'cycle', get_stylesheet_directory_uri() . '/js/jquery.cycle2.js', array(), '2.1.6', true );
     wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteenchild_scripts' );

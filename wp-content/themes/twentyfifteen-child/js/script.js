@@ -15,6 +15,25 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
          clone: true
     });
 
+     // configure the cycle plugin
+    $('.slides').cycle({
+         fx: 'scrollRight',
+         speed:   400,
+         timeout: 200,
+         pause:   0
+    });
+
+    $('.slides').cycle('pause');
+        $('.slides').hover(function () {
+            console.log('hovered');
+            //mouse enter - Resume the slideshow
+            $(this).cycle('resume');
+        },
+        function () {
+            //mouse leave - Pause the slideshow
+            $(this).cycle('pause');
+    });
+
      //about page transition
      $('li.andwhat-we-do-button a').click(function(){
         // alert('click what we do');

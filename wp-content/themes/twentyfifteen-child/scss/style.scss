@@ -159,8 +159,22 @@ nav#mm-menu{
     }
 
     .work-thumbnails{
+        .slides{
+            z-index:0;
+            overflow:hidden;
+        }
+
         .thirds{
             margin:45px 0 10px 0;
+
+            img{
+                min-height:100%;
+                height:auto;
+
+                &.secondary{
+                    display:none;
+                }
+            }
         }
     }
 }
