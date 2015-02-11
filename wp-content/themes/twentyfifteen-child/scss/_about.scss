@@ -1,0 +1,215 @@
+//header image
+.about-header-image{
+    position:relative;
+    width:100%;
+    padding:0 0 34% 0;
+   img{
+        width:100%;
+        height:auto;
+        position:absolute;
+
+        &.andwho-we-do-header{
+            display:none;
+        }
+    }
+}
+
+//subnavigation
+.subnavigation{
+    height:78px;
+    background:white;
+
+    ul{
+        text-align:center;
+        li{
+            display:inline-block;
+            @extend.oswald-light;
+            font-size:18px;
+            line-height:23px;
+            letter-spacing:2px;
+            text-transform:uppercase;
+            padding:28px 0;
+            &:first-child{
+                border-right:1px solid $light-grey;
+                a{
+                    margin-right:50px;
+                    margin-left:0;
+                }
+            }
+            &.active, &:hover{
+                a{
+                    text-decoration:line-through;
+                    color:$blue;
+                }
+            }
+            a{
+                margin-left:50px;
+            }
+        }
+    }
+}
+
+.pod-page-about{
+    .wrapper, .footer{
+        margin:0;
+        padding:0;
+    }
+
+    .andwho-we-do{
+        display:none;
+    }
+
+    .thirds {
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+
+        &.middle{
+            border-left:1px solid $light-grey;
+            border-right:1px solid $light-grey;
+        }
+
+        .inner{
+            padding:60px 0 100px 0;
+            width:75%;
+        }
+
+        h3,h2,p{
+            text-align:left;
+        }
+
+        h3{
+            font-size:19px;
+            line-height:24px;
+            margin-bottom:20px;
+
+            span{
+                position:relative;
+                &:after{
+                    content:"";
+                    position:absolute;
+                    border-bottom:2px solid $black;
+                    width:100%;
+                    bottom:0;
+                    left:0;
+                }
+            }
+        }
+
+        h2{
+            font-size:50px;
+            line-height:55px;
+            letter-spacing:4px;
+            margin:0 0 30px 0;
+            &:after{
+                border-bottom:0;
+            }
+        }
+
+    }
+
+    .andwho-we-do{
+        width:60%;
+        margin:60px auto 120px auto;
+
+        p{
+            text-align:center;
+            width:80.555555%;
+            margin:0 auto;
+            display:block;
+        }
+
+        .client-logos{
+            width:100%;
+            max-width:710px;
+            margin:70px auto 0 auto;
+            display:block;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .about{
+        .thirds{
+            .inner{
+                h3{
+                    font-size:14px;
+                    line-height:19px;
+                    margin-bottom:10px;
+                }
+                h2{
+                    font-size:30px;
+                    line-height:35px;
+                    margin-bottom:15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .about{
+        .thirds{
+            width:100%;
+            &.middle{
+                border:0;
+                .inner{
+                    border-top:1px solid $light-grey;
+                    border-bottom:1px solid $light-grey;
+                    border-left:0;
+                    border-right:0;
+                }
+            }
+            .inner{
+                padding:30px;
+                width:100%;
+            }
+        }
+
+        .andwho-we-do{
+            width:100%;
+            padding:0 30px;
+            margin:60px auto 80px auto;
+
+            .client-logos{
+                width:70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .subnavigation{
+        height:auto;
+        ul{
+            li{
+                font-size:14px;
+                line-height:19px;
+                width:100%;
+                padding:20px 0;
+                a{
+                    margin:0 auto;
+                }
+                &:first-child{
+                    border-bottom:1px solid $light-grey;
+                    border-right:0;
+                    a{
+                        margin:0 auto;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .andwho-we-do{
+            margin:40px auto 60px auto;
+
+            .client-logos{
+                width:85%;
+                margin:50px auto 0 auto;
+            }
+        }
+    }
+}

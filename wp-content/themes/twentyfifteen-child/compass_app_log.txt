@@ -3,3 +3,233 @@
 2015-02-10 09:47:30 overwrite style.css 
 2015-02-10 09:47:46 overwrite style.css 
 2015-02-10 09:48:05 overwrite style.css 
+2015-02-10 09:53:03 overwrite style.css 
+2015-02-10 10:22:14 overwrite style.css 
+2015-02-10 10:22:22 overwrite style.css 
+2015-02-10 10:30:54 overwrite style.css 
+2015-02-10 10:30:59 overwrite style.css 
+2015-02-10 10:31:30 identical style.css 
+2015-02-10 10:31:36 identical style.css 
+2015-02-10 10:31:49 overwrite style.css 
+2015-02-10 10:31:59 overwrite style.css 
+2015-02-10 10:35:46 overwrite style.css 
+2015-02-10 10:35:52 overwrite style.css 
+2015-02-10 10:36:12 overwrite style.css 
+2015-02-10 10:36:41 overwrite style.css 
+2015-02-10 10:37:02 overwrite style.css 
+2015-02-10 10:38:16 overwrite style.css 
+2015-02-10 10:46:45 identical style.css 
+2015-02-10 11:11:01 overwrite style.css 
+2015-02-10 11:11:14 overwrite style.css 
+2015-02-10 11:11:31 overwrite style.css 
+2015-02-10 11:11:52 overwrite style.css 
+2015-02-10 11:12:17 overwrite style.css 
+2015-02-10 13:22:59     error scss/style.scss (Line 19: File to import not found or unreadable: work.
+Load paths:
+  /Users/nat/Workspace/andwhat-dev/wp-content/themes/twentyfifteen-child/scss
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-02-10 13:22:59 overwrite style.css 
+2015-02-10 13:23:06     error scss/style.scss (Line 19: File to import not found or unreadable: work.
+Load paths:
+  /Users/nat/Workspace/andwhat-dev/wp-content/themes/twentyfifteen-child/scss
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-02-10 13:23:06 identical style.css 
+2015-02-10 13:23:35     error scss/style.scss (Line 19: File to import not found or unreadable: work.
+Load paths:
+  /Users/nat/Workspace/andwhat-dev/wp-content/themes/twentyfifteen-child/scss
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-02-10 13:23:35 identical style.css 
+2015-02-10 13:23:49     error scss/style.scss (Line 8 of scss/_work-details.scss: Undefined mixin 'background'.)
+2015-02-10 13:23:49 overwrite style.css 
+2015-02-10 13:24:14     error scss/style.scss (Line 8 of scss/_work-details.scss: Undefined mixin 'background'.)
+2015-02-10 13:24:14 identical style.css 
+2015-02-10 13:24:29 overwrite style.css 
+2015-02-10 13:24:53 overwrite style.css 
+2015-02-10 13:25:14 overwrite style.css 
+2015-02-10 13:25:33 identical style.css 
+2015-02-10 13:25:52 overwrite style.css 
+2015-02-10 13:25:57 overwrite style.css 
+2015-02-10 13:26:13 overwrite style.css 
+2015-02-10 13:26:48 overwrite style.css 
+2015-02-10 13:27:15 overwrite style.css 
+2015-02-10 13:27:31 overwrite style.css 
+2015-02-10 13:27:57 overwrite style.css 
+2015-02-10 13:29:14 overwrite style.css 
+2015-02-10 13:29:19 identical style.css 
+2015-02-10 13:29:49 identical style.css 
+2015-02-10 13:30:28     error scss/style.scss (Line 79 of scss/_bootstrap.scss: Invalid CSS after "...lass*=" icon-"]": expected "{", was "a:before {"
+
+"a:before" may only be used at the beginning of a compound selector.)
+2015-02-10 13:30:28 overwrite style.css 
+2015-02-10 13:30:32 overwrite style.css 
+2015-02-10 13:30:56 overwrite style.css 
+2015-02-10 13:31:12 overwrite style.css 
+2015-02-10 13:31:37 overwrite style.css 
+2015-02-10 13:31:45 overwrite style.css 
+2015-02-10 13:33:03 overwrite style.css 
+2015-02-10 13:33:43 overwrite style.css 
+2015-02-10 13:34:14 overwrite style.css 
+2015-02-10 13:34:48 overwrite style.css 
+2015-02-10 13:35:00 overwrite style.css 
+2015-02-10 13:35:40 overwrite style.css 
+2015-02-10 13:35:47 overwrite style.css 
+2015-02-10 13:37:31 overwrite style.css 
+2015-02-10 13:38:04 overwrite style.css 
+2015-02-10 13:40:09 overwrite style.css 
+2015-02-10 13:41:21 overwrite style.css 
+2015-02-10 13:41:36 overwrite style.css 
+2015-02-10 13:41:43 overwrite style.css 
+2015-02-10 13:42:32 overwrite style.css 
+2015-02-10 13:43:57 overwrite style.css 
+2015-02-10 13:45:22 overwrite style.css 
+2015-02-10 13:45:36 overwrite style.css 
+2015-02-10 13:47:56 overwrite style.css 
+2015-02-10 13:48:13 overwrite style.css 
+2015-02-10 13:48:20 identical style.css 
+2015-02-10 13:48:44 overwrite style.css 
+2015-02-10 13:49:06 overwrite style.css 
+2015-02-10 13:49:31 overwrite style.css 
+2015-02-10 13:49:37 overwrite style.css 
+2015-02-10 13:49:46 overwrite style.css 
+2015-02-10 13:50:19 overwrite style.css 
+2015-02-10 13:50:31 overwrite style.css 
+2015-02-10 13:50:46 overwrite style.css 
+2015-02-10 13:51:17 overwrite style.css 
+2015-02-10 13:51:37 overwrite style.css 
+2015-02-10 13:52:17 overwrite style.css 
+2015-02-10 13:57:27 overwrite style.css 
+2015-02-10 13:57:44 overwrite style.css 
+2015-02-10 13:57:57 overwrite style.css 
+2015-02-10 13:59:52 overwrite style.css 
+2015-02-10 14:00:56 identical style.css 
+2015-02-10 14:01:39 overwrite style.css 
+2015-02-10 14:01:59 overwrite style.css 
+2015-02-10 14:02:03 overwrite style.css 
+2015-02-10 14:02:24 overwrite style.css 
+2015-02-10 14:04:08 overwrite style.css 
+2015-02-10 14:04:12 overwrite style.css 
+2015-02-10 14:04:57 overwrite style.css 
+2015-02-10 14:05:28 overwrite style.css 
+2015-02-10 14:05:55 overwrite style.css 
+2015-02-10 14:05:59 overwrite style.css 
+2015-02-10 14:06:11 overwrite style.css 
+2015-02-10 14:51:14 overwrite style.css 
+2015-02-10 14:51:45 overwrite style.css 
+2015-02-10 14:52:24 overwrite style.css 
+2015-02-10 14:53:16 overwrite style.css 
+2015-02-10 14:57:19 overwrite style.css 
+2015-02-10 16:01:40 overwrite style.css 
+2015-02-10 16:02:01 overwrite style.css 
+2015-02-10 16:02:15 overwrite style.css 
+2015-02-10 16:02:27 overwrite style.css 
+2015-02-10 16:02:41    remove .sass-cache/ 
+2015-02-10 16:02:41    remove style.css 
+2015-02-10 16:02:42    create style.css 
+2015-02-10 16:03:05    remove .sass-cache/ 
+2015-02-10 16:03:05    remove style.css 
+2015-02-10 16:03:07    create style.css 
+2015-02-10 16:34:59 overwrite style.css 
+2015-02-10 16:35:09 overwrite style.css 
+2015-02-10 16:35:23 overwrite style.css 
+2015-02-10 16:37:54 overwrite style.css 
+2015-02-10 16:37:59 overwrite style.css 
+2015-02-10 16:38:08 overwrite style.css 
+2015-02-10 16:46:03 overwrite style.css 
+2015-02-10 16:46:07 overwrite style.css 
+2015-02-10 16:46:46 overwrite style.css 
+2015-02-10 16:47:01     error scss/style.scss (Line 227: Invalid CSS after "...        display": expected ";", was ":block;")
+2015-02-10 16:47:01 overwrite style.css 
+2015-02-10 16:47:04 overwrite style.css 
+2015-02-10 16:47:18 overwrite style.css 
+2015-02-10 16:47:24 overwrite style.css 
+2015-02-10 16:47:36 overwrite style.css 
+2015-02-10 16:48:01 overwrite style.css 
+2015-02-10 16:49:35 overwrite style.css 
+2015-02-10 16:50:10 overwrite style.css 
+2015-02-10 16:50:23 overwrite style.css 
+2015-02-10 16:51:03 overwrite style.css 
+2015-02-10 16:55:32 overwrite style.css 
+2015-02-10 16:55:45 overwrite style.css 
+2015-02-10 16:55:59 overwrite style.css 
+2015-02-10 16:56:11 overwrite style.css 
+2015-02-10 16:57:16 overwrite style.css 
+2015-02-10 16:57:22 overwrite style.css 
+2015-02-11 10:09:14 overwrite style.css 
+2015-02-11 10:29:00 overwrite style.css 
+2015-02-11 10:52:05 overwrite style.css 
+2015-02-11 10:54:12 overwrite style.css 
+2015-02-11 10:54:37 overwrite style.css 
+2015-02-11 10:55:03 overwrite style.css 
+2015-02-11 11:26:21 overwrite style.css 
+2015-02-11 11:27:53 overwrite style.css 
+2015-02-11 11:28:18 overwrite style.css 
+2015-02-11 12:02:51 overwrite style.css 
+2015-02-11 12:03:43 overwrite style.css 
+2015-02-11 12:03:54 overwrite style.css 
+2015-02-11 12:04:49 overwrite style.css 
+2015-02-11 12:05:39 overwrite style.css 
+2015-02-11 12:13:59 overwrite style.css 
+2015-02-11 12:14:08 overwrite style.css 
+2015-02-11 12:14:34 overwrite style.css 
+2015-02-11 12:14:48 overwrite style.css 
+2015-02-11 12:15:25 overwrite style.css 
+2015-02-11 12:15:37 overwrite style.css 
+2015-02-11 14:17:50 overwrite style.css 
+2015-02-11 14:17:52 overwrite style.css 
+2015-02-11 14:18:11 overwrite style.css 
+2015-02-11 14:18:43 overwrite style.css 
+2015-02-11 14:19:45 overwrite style.css 
+2015-02-11 14:20:08 overwrite style.css 
+2015-02-11 14:20:42 overwrite style.css 
+2015-02-11 14:20:56 overwrite style.css 
+2015-02-11 14:21:06 overwrite style.css 
+2015-02-11 14:39:22 overwrite style.css 
+2015-02-11 14:43:03 overwrite style.css 
+2015-02-11 14:43:11 overwrite style.css 
+2015-02-11 14:58:26 overwrite style.css 
+2015-02-11 15:00:11 overwrite style.css 
+2015-02-11 15:18:17 overwrite style.css 
+2015-02-11 15:18:34 overwrite style.css 
+2015-02-11 15:24:56 overwrite style.css 
+2015-02-11 15:25:21 overwrite style.css 
+2015-02-11 15:26:54 overwrite style.css 
+2015-02-11 15:27:45 overwrite style.css 
+2015-02-11 15:28:01 overwrite style.css 
+2015-02-11 15:28:06 overwrite style.css 
+2015-02-11 15:28:48 overwrite style.css 
+2015-02-11 15:29:40 overwrite style.css 
+2015-02-11 15:30:18 overwrite style.css 
+2015-02-11 15:30:35 overwrite style.css 
+2015-02-11 15:30:43 overwrite style.css 
+2015-02-11 15:30:57 overwrite style.css 
+2015-02-11 15:31:26 overwrite style.css 
+2015-02-11 15:31:56 overwrite style.css 
+2015-02-11 16:09:42 overwrite style.css 
+2015-02-11 16:12:27 overwrite style.css 

@@ -4,7 +4,7 @@
 http_path = "../"
 css_dir = ""
 sass_dir = "scss"
-images_dir = "img"
+images_dir = "twentyfifteen-child/img"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 

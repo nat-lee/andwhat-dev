@@ -1,0 +1,238 @@
+/*header images*/
+
+.header{
+    display:block;
+    padding:15% 0;
+    position:relative;
+    &.aline{
+        @include background(image-url('headers/aline.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.anhha{
+        @include background(image-url('headers/anhha.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.sven-anton{
+        @include background(image-url('headers/sven-anton.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.pfeffer{
+        @include background(image-url('headers/pfeffer.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.mariana-hardwick{
+        @include background(image-url('headers/mariana-hardwick.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+}
+
+.white-text-box{
+    width:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border:3px solid white;
+    padding:0.5%;
+    text-align:center;
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    &:after{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:102.5%;
+    }
+
+    .inner{
+        width:auto;
+        padding:50px 80px;
+        background:white;
+        white-space:nowrap;
+    }
+
+    h1{
+        font-size:60px;
+        line-height:65px;
+        margin:0 auto;
+    }
+    h4{
+        margin-top:10px;
+    }
+}
+
+//Introduction
+.introduction{
+    width:36.785714%;
+    margin:0 auto 100px auto;
+    display:block;
+
+    .logo{
+        margin:0 auto;
+        display:block;
+    }
+
+    p{
+        text-align:center;
+        margin:20px 0;
+        &:after{
+            content:"";
+            display:block;
+            position:absolute;
+            left:50%;
+            margin-top:20px;
+            margin-left:-27px;
+            border-bottom:1px solid $black;
+            width:55px;
+        }
+    }
+}
+
+.introduction-image{
+    width:100%;
+    margin:0 auto 150px auto;
+    display:block;
+    max-width:900px;
+
+    img{
+        width:100%;
+    }
+}
+
+//content
+.project-content{
+    width:100%;
+    position:relative;
+}
+
+.overview{
+    width:34.166666%;
+    float:left;
+    position:relative;
+
+    .inner{
+        padding:10px 15.853656% 0 0;
+    }
+
+    h2{
+        text-align:left;
+        margin-bottom:30px;
+        &:after{
+            left:0;
+            margin-left:20px;
+        }
+    }
+}
+
+.project-images{
+    width:65.833333%;
+    float:right;
+
+    img{
+        margin-bottom:30px;
+        width:100%;
+    }
+}
+
+//work details buttons
+.work-details-buttons{
+    margin:30px 0 100px 0;
+    border-top:1px solid $light-grey;
+    border-bottom:1px solid $light-grey;
+
+    ul{
+        text-align:center;
+
+        li{
+            display:inline-block;
+            &.previous{
+                float:left;
+            }
+            &.next{
+                float:right;
+            }
+            a{
+                margin:35px 0;
+            }
+        }
+    }
+}
+
+//media queries
+@media only screen and (max-width:768px){
+    .white--text-box{
+        .inner{
+            padding:10% 15%;
+        }
+        h1{
+            font-size:40px;
+            line-height:35px;
+        }
+    }
+
+    .introduction{
+        width:70%;
+    }
+
+    .introduction-image{
+        margin:0 auto 60px auto;
+    }
+
+    .overview{
+        width:100%;
+    }
+
+    .project-images{
+        width:100%;
+        margin:40px 0;
+    }
+
+    .work-details-buttons{
+        border-bottom:0;
+        margin:20px 0;
+        padding:40px 20px;
+        ul{
+            li, li a{
+                width:100%;
+            }
+            a.button{
+                margin:10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        &.aline, &.anhha, &.pfeffer, &.mariana-hardwick{
+            background-size:cover;
+            background-position: center;
+            background-attachment:scroll;
+        }
+    }
+    .white-text-box{
+        width:40%;
+        .inner{
+            padding:10% 15%;
+        }
+        h1{
+            font-size:18px;
+            letter-spacing:4px;
+            line-height:22px;
+        }
+        h4{
+            margin-top:0;
+            font-size:9px;
+            line-height:15px;
+        }
+    }
+
+    .introduction{
+        .logo{
+            width:30%;
+        }
+    }
+}

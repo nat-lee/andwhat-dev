@@ -3,10 +3,323 @@
  Theme URI:    nat.local/andwhat-dev/twenty-fifteen-child/
  Description:  Twenty Fifteen Child Theme
  Author:       Natalie Lee
- Template:     Andwhat
+ Author URI:   http://example.com
+ Template:     twentyfifteen
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+
+@import 'compass';
+@import 'normalise';
+@import 'bootstrap';
+@import 'base';
+@import 'home';
+@import 'work-details';
+@import 'about';
+@import 'contact';
+
+//andwhat logo
+.icon-andwhat:before {
+    content: "\e606";
+    font-size:90px;
+    position:absolute;
+    top:12px;
+}
+
+//subscribe form
+.subscribe-form{
+    width:100%;
+    background:$cream;
+    height:110px;
+
+    .inner{
+        width:100%;
+        max-width:1200px;
+        margin:0 auto;
+        background:red;
+        height:110px;
+    }
+}
+
+//navigation
+.navigation{
+    overflow:hidden;
+    width:100%;
+    z-index:2000;
+    padding:0 2.5%;
+    top:30px;
+    display:block;
+    height:117px;
+    background:white;
+
+    nav{
+        position:absolute;
+        width:100%;
+        right:2.5%;
+    }
+
+    ul{
+        position:absolute;
+        right:0;
+        top:47px;
+        overflow:hidden;
+
+        li{
+            @extend.oswald-light;
+            font-size:18px;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            display:inline-block;
+
+            &:first-child a{
+                margin-left:0;
+            }
+
+            &:hover a, &.current_page_item a{
+                color:$blue;
+                text-decoration:line-through;
+            }
+        }
+
+        a{
+            display:inline-block;
+            margin-left:40px;
+        }
+    }
+
+    li.icon-subscribe{
+         a{
+            color:transparent;
+            width:20px;
+         }
+
+         a:before{
+            color:$black;
+            content: "\e603";
+            width:30px;
+            @extend.icomoon;
+        }
+    }
+}
+
+.icon-menu{
+    display:none;
+    position:absolute;
+    right:0;
+    font-size:52px;
+    top:30px;
+    color:$black;
+    z-index:10000;
+
+    &:before{
+    content: "\e602";
+    }
+}
+
+/*Mobile Menu*/
+nav#mm-menu{
+    ul{
+        li{
+            a{
+                @extend.oswald;
+                text-transform:uppercase;
+                letter-spacing:2px;
+                font-size:14px;
+                color:white;
+                padding:20px 10px 20px 20px;
+            }
+        }
+    }
+}
+
+/*Wrapper*/
+.wrapper{
+    margin-top:100px;
+    overflow:hidden;
+
+    .container{
+        overflow:hidden;
+    }
+
+    .inner{
+        margin:0 auto;
+        width:100%;
+        max-width:1200px;
+    }
+
+    .heading{
+        p{
+            text-align:center;
+            width:42.916666%;
+            margin:40px auto 100px auto;
+        }
+    }
+
+    .work-thumbnails{
+        .thirds{
+            margin:45px 0 10px 0;
+        }
+    }
+}
+
+/*Footer*/
+.footer{
+    margin:100px 0 0 0;
+    width:100%;
+    background:white;
+
+    .container{
+        overflow:hidden;
+    }
+
+    .thirds{
+        border-right:1px solid $light-grey;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .inner{
+        width:64.377682%;
+        display:block;
+        margin:0 auto;
+        padding:40px 0;
+
+        h3{
+            text-align:left;
+            font-size:20px;
+            line-height:25px;
+            margin-top:0;
+        }
+
+        p{
+            font-size:15px;
+            line-height:20px;
+            text-align:left;
+            margin:10px 0 0 0;
+        }
+
+        ul{
+            margin:10px 0 0 0;
+            &.get-in-touch{
+                margin:0;
+                li{
+                    margin:15px 0;
+                }
+            }
+        }
+
+        li{
+            list-style:none;
+            font-size:15px;
+            line-height:20px;
+            position:relative;
+
+            .icon-phone, .icon-email{
+                padding-left:35px;
+                &:before{
+                    font-size:25px;
+                    position:absolute;
+                    left:0;
+                    color:$blue;
+                }
+            }
+
+            .icon-facebook{
+                font-size:25px;
+                margin:-5px auto 0 auto;
+                padding-top:0;
+                display:block;
+
+                .text{
+                    font-size:15px;
+                    @extend.crimson;
+                    margin-left:10px;
+                }
+
+                .path1:before{
+                    content: "\e600";
+                    color: $blue;
+                    margin-top:5px;
+                    float:left;
+                }
+                .path2:before{
+                    content: "\e601";
+                    color: rgb(255, 255, 255);
+                    margin-left: -1em;
+                    margin-top:5px;
+                    float:left;
+                }
+            }
+
+            .icon-phone:before{
+                content: "\e604";
+            }
+
+            .icon-email:before {
+                content: "\e605";
+            }
+
+
+        }
+    }
+}
+
+.disclaimer{
+    font-size:11px;
+    text-align:center;
+    padding:10px 0;
+    margin:0 auto;
+    display:block;
+}
+
+@media only screen and (max-width:1200px){
+    .wrapper{
+        .inner{
+            padding:0 20px;
+        }
+    }
+}
+
+/*wrapper*/
+@media only screen and (max-width:768px){
+    .icon-menu{
+        display:block;
+    }
+    nav{
+        display:none;
+    }
+}
+
+@media only screen and(max-width:600px){
+    .wrapper{
+        margin-top:50px;
+        .heading{
+            h1{
+                font-size:60px;
+                line-height:65px;
+            }
+            h2{
+                font-size:20px;
+                line-height:25px;
+                margin-bottom:0;
+            }
+            p{
+                width:80%;
+                margin-bottom:50px;
+            }
+        }
+    }
+    .footer{
+        .thirds{
+            width:100%;
+            border-right:0;
+            border-top:1px solid $light-grey;
+            &:first-child{
+                border-top:0;
+            }
+        }
+    }
+}
