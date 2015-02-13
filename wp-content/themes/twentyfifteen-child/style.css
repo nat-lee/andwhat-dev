@@ -328,6 +328,7 @@ h4 {
   left: 0;
   right: 0;
   bottom: 0;
+  background-attachment: fixed;
 }
 .home .navigation.home {
   position: absolute;
