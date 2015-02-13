@@ -22,11 +22,21 @@
 @import 'contact';
 
 //andwhat logo
-.icon-andwhat:before {
-    content: "\e606";
-    font-size:90px;
-    position:absolute;
-    top:12px;
+.icon-andwhat{
+    &:before {
+        content: "\e606";
+        font-size:90px;
+        position:absolute;
+        top:12px;
+    }
+    &.fixed-navigation{
+        &:before{
+            position:fixed;
+            font-size:55px;
+            left:5px;
+            top:13px;
+        }
+    }
 }
 
 //subscribe form
@@ -46,6 +56,8 @@
 
 //navigation
 .navigation{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     overflow:hidden;
     width:100%;
     z-index:2000;
@@ -54,6 +66,16 @@
     display:block;
     height:117px;
     background:white;
+
+    &.fixed-navigation{
+        position:fixed;
+        top:0;
+        height:80px;
+
+        ul{
+            top:29px;
+        }
+    }
 
     nav{
         position:absolute;
@@ -116,6 +138,10 @@
 
     &:before{
     content: "\e602";
+    }
+
+    &.fixed-navigation{
+        top:15px;
     }
 }
 

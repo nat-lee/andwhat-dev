@@ -35,6 +35,15 @@ $params = array(
                 <?php }?>
             </div>
         </div>
+        <div class="inner">
+            <div class="work-details-buttons">
+                <ul class="clear">
+                    <li class="more-work">
+                        <a class="button" href="<?php echo get_site_url(); ?>/work">More Work</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div><!--wrapper-->
 
 <?php get_footer(); ?>

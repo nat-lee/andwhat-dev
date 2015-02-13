@@ -24,12 +24,15 @@
 
 <body <?php body_class(); ?>>
 <div class="header-image">
-    <img class="andwhat-triangle" src="<?php bloginfo('stylesheet_directory'); ?>/img/andwhat-triangle-logo.png" alt="Andwhat"/>
-    <a href="#menu" class="icon-menu"></a>
-    <div class="navigation home clear">
-        <nav id="menu">
-            <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-        </nav>
+    <div class="home-navigation">
+        <img class="andwhat-triangle" src="<?php bloginfo('stylesheet_directory'); ?>/img/andwhat-triangle-logo.png" alt="Andwhat"/>
+        <a href="#menu" class="icon-menu"></a>
+        <a href="<?php echo get_site_url(); ?>" class="icon-andwhat"></a>
+        <div class="navigation home clear">
+            <nav id="menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+            </nav>
+        </div>
     </div>
     <div class="header-text-wrapper">
         <div class="inner">

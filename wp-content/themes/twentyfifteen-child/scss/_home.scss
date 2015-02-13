@@ -12,8 +12,29 @@
         background-attachment:fixed;
     }
 
+
+    //andwhat logo
+    .icon-andwhat{
+        &:before{
+            display:none;
+        }
+
+        &.home-fixed-navigation{
+            z-index:10000;
+            position:fixed;
+            &:before{
+                display:block;
+                top:13px;
+                left:5px;
+                font-size:55px;
+            }
+        }
+    }
+
     //navigation
     .navigation.home{
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         position:absolute;
         background:none;
         ul{
@@ -33,18 +54,50 @@
                 }
             }
         }
+
+        &.home-fixed-navigation{
+            background:white;
+            position:fixed;
+            height:80px;
+            top:0;
+            ul{
+                top:29px;
+                li{
+                    a{
+                        color:$black;
+                    }
+                    &.icon-subscribe a{
+                    &:before{
+                        color:$black;
+                    }
+                }
+                }
+            }
+        }
     }
 
     .icon-menu{
         color:white;
         top:0;
+
+        &.home-fixed-navigation{
+            color:$black;
+            position:fixed;
+            z-index:100000;
+            top:15px;
+        }
     }
 
     .andwhat-triangle{
-        position:absolute;
+        position:fixed;
         left:0;
         top:0;
         width:13%;
+        max-width:140px;
+
+        &.home-fixed-navigation{
+            display:none;
+        }
     }
 
     //header text
@@ -107,6 +160,10 @@
 //wrapper
 .home .wrapper{
     margin-top:60px;
+
+    .work-details-buttons{
+        margin:50px 0 0 0 ;
+    }
 }
 
 @media only screen and (max-width:960px){
@@ -134,6 +191,11 @@
                 p{
                     width:50%;
                 }
+            }
+        }
+        .wrapper{
+            .work-details-buttons{
+                border-bottom:1px solid $light-grey;
             }
         }
     }

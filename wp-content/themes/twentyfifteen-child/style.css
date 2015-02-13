@@ -330,7 +330,22 @@ h4 {
   bottom: 0;
   background-attachment: fixed;
 }
+.home .icon-andwhat:before {
+  display: none;
+}
+.home .icon-andwhat.home-fixed-navigation {
+  z-index: 10000;
+  position: fixed;
+}
+.home .icon-andwhat.home-fixed-navigation:before {
+  display: block;
+  top: 13px;
+  left: 5px;
+  font-size: 55px;
+}
 .home .navigation.home {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: absolute;
   background: none;
 }
@@ -349,15 +364,40 @@ h4 {
 .home .navigation.home ul li.icon-subscribe a:before {
   color: white;
 }
+.home .navigation.home.home-fixed-navigation {
+  background: white;
+  position: fixed;
+  height: 80px;
+  top: 0;
+}
+.home .navigation.home.home-fixed-navigation ul {
+  top: 29px;
+}
+.home .navigation.home.home-fixed-navigation ul li a {
+  color: #262626;
+}
+.home .navigation.home.home-fixed-navigation ul li.icon-subscribe a:before {
+  color: #262626;
+}
 .home .icon-menu {
   color: white;
   top: 0;
 }
+.home .icon-menu.home-fixed-navigation {
+  color: #262626;
+  position: fixed;
+  z-index: 100000;
+  top: 15px;
+}
 .home .andwhat-triangle {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 13%;
+  max-width: 140px;
+}
+.home .andwhat-triangle.home-fixed-navigation {
+  display: none;
 }
 .home .header-text-wrapper {
   width: 100%;
@@ -414,6 +454,9 @@ h4 {
 .home .wrapper {
   margin-top: 60px;
 }
+.home .wrapper .work-details-buttons {
+  margin: 50px 0 0 0;
+}
 
 @media only screen and (max-width: 960px) {
   .home .header-text-wrapper .text h1 {
@@ -429,6 +472,9 @@ h4 {
 @media only screen and (max-width: 768px) {
   .home .header-text-wrapper .text p {
     width: 50%;
+  }
+  .home .wrapper .work-details-buttons {
+    border-bottom: 1px solid #ebebeb;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -941,6 +987,12 @@ h4 {
   position: absolute;
   top: 12px;
 }
+.icon-andwhat.fixed-navigation:before {
+  position: fixed;
+  font-size: 55px;
+  left: 5px;
+  top: 13px;
+}
 
 .subscribe-form {
   width: 100%;
@@ -956,6 +1008,8 @@ h4 {
 }
 
 .navigation {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   overflow: hidden;
   width: 100%;
   z-index: 2000;
@@ -964,6 +1018,14 @@ h4 {
   display: block;
   height: 117px;
   background: white;
+}
+.navigation.fixed-navigation {
+  position: fixed;
+  top: 0;
+  height: 80px;
+}
+.navigation.fixed-navigation ul {
+  top: 29px;
 }
 .navigation nav {
   position: absolute;
@@ -1014,6 +1076,9 @@ h4 {
 }
 .icon-menu:before {
   content: "\e602";
+}
+.icon-menu.fixed-navigation {
+  top: 15px;
 }
 
 /*Mobile Menu*/

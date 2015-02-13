@@ -4,20 +4,30 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
 
  $(document).ready(function(){
 
-     //mobile menu
-     $("#menu").mmenu({
-         offCanvas: {
-               position  : "top",
-               zposition : "front"
-            }
-         }, {
-         // duplicates menu for desktop and mobile
-         clone: true
+    //mobile menu
+    $("#menu").mmenu({
+        offCanvas: {
+           position  : "top",
+           zposition : "front"
+        }
+        }, {
+        // duplicates menu for desktop and mobile
+        clone: true
     });
+
+    //fixed homepage navigation
+    $('.home .wrapper').waypoint(function(direction){
+        $('.navigation.home, .andwhat-triangle, .icon-andwhat, .icon-menu').toggleClass('home-fixed-navigation', direction === 'down');
+    })
+
+    //all other fixed navigation
+    $('.wrapper').waypoint(function(direction){
+        $('.navigation, .icon-andwhat, .icon-menu').toggleClass('fixed-navigation', direction === 'down');
+    })
 
      // configure the cycle plugin
     $('.slides').cycle({
-         fx: 'scrollRight',
+         fx: 'fade',
          speed:   400,
          timeout: 200,
          pause:   0
@@ -25,7 +35,7 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
 
     $('.slides').cycle('pause');
         $('.slides').hover(function () {
-            console.log('hovered');
+            //console.log('hovered');
             //mouse enter - Resume the slideshow
             $(this).cycle('resume');
         },
