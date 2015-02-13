@@ -27,11 +27,7 @@ add_shortcode('button', 'sButton');
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
-/**
- * Enqueue scripts and styles.
- *
- * @since Twenty Fifteen 1.0
- */
+//adding scripts
 function twentyfifteenchild_scripts() {
     // Add Genericons, used in the main stylesheet.
     wp_enqueue_style( 'fancybox-style', get_stylesheet_directory_uri() . '/js/fancybox/jquery.fancybox.css', array(), '2.1.5' );
@@ -47,4 +43,14 @@ function twentyfifteenchild_scripts() {
     wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteenchild_scripts' );
+
+//adding subscribe widget
+function twentyfifteenchild_register_sidebars() {
+  register_sidebar(array(
+        'id' => 'subscribe-sidebar',
+        'name' => 'Subscribe Form',
+        'description' => 'Subscribe Notification Form',
+    ));
+}
+add_action( 'widgets_init', 'twentyfifteenchild_register_sidebars' );
 ?>

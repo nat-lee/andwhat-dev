@@ -40,17 +40,111 @@
 }
 
 //subscribe form
+.widget{
+    list-style:none;
+}
+
 .subscribe-form{
     width:100%;
     background:$cream;
-    height:110px;
+    height:100px;
+    display:none;
 
     .inner{
         width:100%;
         max-width:1200px;
         margin:0 auto;
-        background:red;
-        height:110px;
+        display:block;
+        position:relative;
+        top:39px;
+
+        .close{
+            font-family:"Helvetica Neue", "Helvetica", Arial;
+            font-size:30px;
+            color:$grey;
+            font-weight:100;
+            float:left;
+            &:hover{
+                color:$blue;
+            }
+        }
+
+        p{
+            font-size:18px;
+            line-height:23px;
+            float:left;
+            margin-left:20px;
+        }
+
+        .epm-sign-up-form{
+            width:31.25%;
+            position:absolute;
+            right:0;
+
+            &:after{
+                content:"";
+                width:100%;
+                border-bottom:1px solid $black;
+                position:absolute;
+                top:26px;
+            }
+
+            .epm-form-field{
+                position:absolute;
+                z-index:0;
+            }
+
+            .epm-error, .epm-success{
+                position:absolute;
+                z-index:100;
+                width:100%;
+                p{
+                    margin:0;
+                    width:100%;
+                    font-size:15px;
+                    background:$cream;
+                }
+            }
+
+            input.email{
+                background:none;
+                border:none;
+                font-size:18px;
+                color:$black;
+                @extend.crimson;
+
+                &:focus{
+                    outline:none;
+                }
+
+                &::-webkit-input-placeholder{
+                    color:$black;
+                }
+
+                &:-moz-placeholder{
+                    color:$black;
+                }
+
+                &::-moz-placeholder{
+                    color:$black;
+                }
+
+                &:-ms-input-placeholde{
+                    color:$black;
+                }
+            }
+
+            .button{
+                font-size:15px;
+                border:0;
+                background:none;
+                padding:0;
+                margin:0;
+                position:absolute;
+                right:0;
+            }
+
+        }
     }
 }
 
@@ -316,6 +410,15 @@ nav#mm-menu{
 }
 
 @media only screen and (max-width:1200px){
+    .subscribe-form{
+        .inner{
+            padding:0 2%;
+
+            .epm-sign-up-form{
+                right:2%;
+            }
+        }
+    }
     .wrapper{
         .inner{
             padding:0 20px;
@@ -324,6 +427,32 @@ nav#mm-menu{
 }
 
 /*wrapper*/
+@media only screen and (max-width:900px){
+    .subscribe-form{
+        height:120px;
+        .inner{
+            top:20px;
+
+            .close{
+                position:absolute;
+            }
+
+            p.text{
+                margin:0 auto;
+                display:block;
+                float:none;
+                text-align:center;
+            }
+            .epm-sign-up-form{
+                top:40px;
+                width:50%;
+                left:50%;
+                margin-left:-25%;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:768px){
     .icon-menu{
         display:block;
@@ -334,6 +463,29 @@ nav#mm-menu{
 }
 
 @media only screen and(max-width:600px){
+    .subscribe-form{
+        height:145px;
+        .close{
+            left:50%;
+            margin-left:-7px;
+        }
+        .inner{
+            p{
+                font-size:14px;
+                &.text{
+                    padding-top:35px;
+                }
+            }
+            .epm-sign-up-form{
+                width:80%;
+                margin-left:-40%;
+                top:70px;
+               input.email{
+                    font-size:14px;
+                }
+            }
+        }
+    }
     .wrapper{
         margin-top:50px;
         .heading{

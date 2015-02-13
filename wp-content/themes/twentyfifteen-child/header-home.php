@@ -23,6 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php dynamic_sidebar( 'subscribe-sidebar' );?>
 <div class="header-image">
     <div class="home-navigation">
         <img class="andwhat-triangle" src="<?php bloginfo('stylesheet_directory'); ?>/img/andwhat-triangle-logo.png" alt="Andwhat"/>

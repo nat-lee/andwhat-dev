@@ -25,6 +25,14 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
         $('.navigation, .icon-andwhat, .icon-menu').toggleClass('fixed-navigation', direction === 'down');
     })
 
+    //subscribe form popup
+    $('.icon-subscribe a').click(function(){
+        $('.subscribe-form').slideDown('slow');
+    });
+    $('a.close').click(function(){
+        $('.subscribe-form').slideUp('slow');
+    });
+
      // configure the cycle plugin
     $('.slides').cycle({
          fx: 'fade',

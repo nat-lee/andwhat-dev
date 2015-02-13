@@ -137,7 +137,7 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.crimson, body, p, .footer .inner li .icon-facebook .text {
+.crimson, body, p, .subscribe-form .inner .epm-sign-up-form input.email, .footer .inner li .icon-facebook .text {
   font-family: 'crimson_textroman', 'Georgia', 'Times', 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -392,7 +392,6 @@ h4 {
 .home .andwhat-triangle {
   position: fixed;
   left: 0;
-  top: 0;
   width: 13%;
   max-width: 140px;
 }
@@ -536,7 +535,7 @@ h4 {
 }
 .white-text-box .inner {
   width: auto;
-  padding: 50px 80px;
+  padding: 40px 80px;
   background: white;
   white-space: nowrap;
 }
@@ -635,13 +634,34 @@ h4 {
   margin: 35px 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .white--text-box .inner {
-    padding: 10% 15%;
-  }
-  .white--text-box h1 {
+@media only screen and (max-width: 1200px) {
+  .white-text-box .inner h1 {
     font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .white-text-box {
+    border: 0;
+    padding: 0;
+  }
+  .white-text-box .inner {
+    padding: 30px 50px;
+  }
+  .white-text-box .inner h1 {
+    font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .white-text-box {
+    width: 60%;
+  }
+  .header .white-text-box .inner h1 {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
   }
 
   .introduction {
@@ -680,21 +700,21 @@ h4 {
     background-attachment: scroll;
   }
 
-  .white-text-box {
-    width: 40%;
+  .header .white-text-box {
+    width: 80%;
   }
-  .white-text-box .inner {
-    padding: 10% 15%;
+  .header .white-text-box .inner {
+    padding: 5% 5%;
   }
-  .white-text-box h1 {
-    font-size: 18px;
+  .header .white-text-box .inner h1 {
+    font-size: 14px;
     letter-spacing: 4px;
-    line-height: 22px;
+    line-height: 20px;
   }
-  .white-text-box h4 {
+  .header .white-text-box .inner h4 {
     margin-top: 0;
-    font-size: 9px;
-    line-height: 15px;
+    font-size: 8px;
+    line-height: 13px;
   }
 
   .introduction .logo {
@@ -994,17 +1014,96 @@ h4 {
   top: 13px;
 }
 
+.widget {
+  list-style: none;
+}
+
 .subscribe-form {
   width: 100%;
   background: #f6f5f0;
-  height: 110px;
+  height: 100px;
+  display: none;
 }
 .subscribe-form .inner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: red;
-  height: 110px;
+  display: block;
+  position: relative;
+  top: 39px;
+}
+.subscribe-form .inner .close {
+  font-family: "Helvetica Neue", "Helvetica", Arial;
+  font-size: 30px;
+  color: #8a8a8a;
+  font-weight: 100;
+  float: left;
+}
+.subscribe-form .inner .close:hover {
+  color: #3355ff;
+}
+.subscribe-form .inner p {
+  font-size: 18px;
+  line-height: 23px;
+  float: left;
+  margin-left: 20px;
+}
+.subscribe-form .inner .epm-sign-up-form {
+  width: 31.25%;
+  position: absolute;
+  right: 0;
+}
+.subscribe-form .inner .epm-sign-up-form:after {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #262626;
+  position: absolute;
+  top: 26px;
+}
+.subscribe-form .inner .epm-sign-up-form .epm-form-field {
+  position: absolute;
+  z-index: 0;
+}
+.subscribe-form .inner .epm-sign-up-form .epm-error, .subscribe-form .inner .epm-sign-up-form .epm-success {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.subscribe-form .inner .epm-sign-up-form .epm-error p, .subscribe-form .inner .epm-sign-up-form .epm-success p {
+  margin: 0;
+  width: 100%;
+  font-size: 15px;
+  background: #f6f5f0;
+}
+.subscribe-form .inner .epm-sign-up-form input.email {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form input.email:focus {
+  outline: none;
+}
+.subscribe-form .inner .epm-sign-up-form input.email::-webkit-input-placeholder {
+  color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form input.email:-moz-placeholder {
+  color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form input.email::-moz-placeholder {
+  color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form input.email:-ms-input-placeholde {
+  color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form .button {
+  font-size: 15px;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
 }
 
 .navigation {
@@ -1218,11 +1317,41 @@ nav#mm-menu ul li a {
 }
 
 @media only screen and (max-width: 1200px) {
+  .subscribe-form .inner {
+    padding: 0 2%;
+  }
+  .subscribe-form .inner .epm-sign-up-form {
+    right: 2%;
+  }
+
   .wrapper .inner {
     padding: 0 20px;
   }
 }
 /*wrapper*/
+@media only screen and (max-width: 900px) {
+  .subscribe-form {
+    height: 120px;
+  }
+  .subscribe-form .inner {
+    top: 20px;
+  }
+  .subscribe-form .inner .close {
+    position: absolute;
+  }
+  .subscribe-form .inner p.text {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .subscribe-form .inner .epm-sign-up-form {
+    top: 40px;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .icon-menu {
     display: block;
@@ -1233,6 +1362,28 @@ nav#mm-menu ul li a {
   }
 }
 @media only screen and (max-width: 600px) {
+  .subscribe-form {
+    height: 145px;
+  }
+  .subscribe-form .close {
+    left: 50%;
+    margin-left: -7px;
+  }
+  .subscribe-form .inner p {
+    font-size: 14px;
+  }
+  .subscribe-form .inner p.text {
+    padding-top: 35px;
+  }
+  .subscribe-form .inner .epm-sign-up-form {
+    width: 80%;
+    margin-left: -40%;
+    top: 70px;
+  }
+  .subscribe-form .inner .epm-sign-up-form input.email {
+    font-size: 14px;
+  }
+
   .wrapper {
     margin-top: 50px;
   }
