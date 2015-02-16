@@ -512,6 +512,22 @@ h4 {
   background: url('../twentyfifteen-child/img/headers/mariana-hardwick.jpg') no-repeat fixed;
   background-size: 100%;
 }
+.header.caterina-belluardo {
+  background: url('../twentyfifteen-child/img/headers/caterina-belluardo.jpg') no-repeat fixed;
+  background-size: 100%;
+}
+.header.barbara-bonner {
+  background: url('../twentyfifteen-child/img/headers/barbara-bonner.jpg') no-repeat fixed;
+  background-size: 100%;
+}
+.header.malle {
+  background: url('../twentyfifteen-child/img/headers/malle.jpg') no-repeat fixed;
+  background-size: 100%;
+}
+.header.rotring {
+  background: url('../twentyfifteen-child/img/headers/rotring.jpg') no-repeat fixed;
+  background-size: 100%;
+}
 
 .white-text-box {
   width: auto;
@@ -743,7 +759,7 @@ h4 {
   }
 }
 @media only screen and (max-width: 600px) {
-  .header.aline, .header.anhha, .header.pfeffer, .header.mariana-hardwick {
+  .header.aline, .header.anhha, .header.pfeffer, .header.mariana-hardwick, .header.sven-anton, .header.caterina-belluardo, .header.barbara-bonner, .header.malle, .header.rotring {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -1293,10 +1309,9 @@ nav#mm-menu ul li a {
   overflow: hidden;
 }
 .wrapper .work-thumbnails .thirds, .wrapper .more-work .thirds {
-  margin: 45px 0 10px 0;
+  margin: 0px 0 20px 0;
 }
 .wrapper .work-thumbnails .thirds img, .wrapper .more-work .thirds img {
-  min-height: 100%;
   height: auto;
 }
 .wrapper .work-thumbnails .thirds img.secondary, .wrapper .more-work .thirds img.secondary {
@@ -1306,7 +1321,7 @@ nav#mm-menu ul li a {
 /*Scroll to bottom / Back to top Button*/
 .icon-scroll-to-bottom, .icon-back-to-top {
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   font-size: 90px;
   right: 20px;
   cursor: pointer;

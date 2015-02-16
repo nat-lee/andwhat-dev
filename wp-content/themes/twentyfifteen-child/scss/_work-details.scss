@@ -24,6 +24,22 @@
         @include background(image-url('headers/mariana-hardwick.jpg')no-repeat fixed);
         background-size:100%;
     }
+    &.caterina-belluardo{
+        @include background(image-url('headers/caterina-belluardo.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.barbara-bonner{
+        @include background(image-url('headers/barbara-bonner.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.malle{
+        @include background(image-url('headers/malle.jpg')no-repeat fixed);
+        background-size:100%;
+    }
+    &.rotring{
+        @include background(image-url('headers/rotring.jpg')no-repeat fixed);
+        background-size:100%;
+    }
 }
 
 .white-text-box{
@@ -304,7 +320,7 @@
 
 @media only screen and (max-width:600px){
     .header{
-        &.aline, &.anhha, &.pfeffer, &.mariana-hardwick{
+        &.aline, &.anhha, &.pfeffer, &.mariana-hardwick,&.sven-anton, &.caterina-belluardo, &.barbara-bonner, &.malle, &.rotring{
             background-size:cover;
             background-position: center;
             background-attachment:scroll;

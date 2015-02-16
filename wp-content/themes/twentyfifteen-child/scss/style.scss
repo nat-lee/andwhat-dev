@@ -286,10 +286,9 @@ nav#mm-menu{
         }
 
         .thirds{
-            margin:45px 0 10px 0;
+            margin:0px 0 20px 0;
 
             img{
-                min-height:100%;
                 height:auto;
 
                 &.secondary{
@@ -303,7 +302,7 @@ nav#mm-menu{
 /*Scroll to bottom / Back to top Button*/
 .icon-scroll-to-bottom, .icon-back-to-top{
     position:fixed;
-    bottom:0;
+    bottom:-1px;
     font-size:90px;
     right:20px;
     cursor:pointer;

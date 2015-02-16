@@ -73,8 +73,8 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
      // configure the cycle plugin
     $('.slides').cycle({
          fx: 'fade',
-         speed:   400,
-         timeout: 200,
+         speed:   800,
+         timeout: 800,
          pause:   0
     });
 
