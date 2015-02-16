@@ -6,6 +6,9 @@
     $moreWork = pods( 'project');
     $moreWork->find('RAND()', 6);
 
+    $moreWorkThumbs = pods('project');
+    $moreWorkThumbs->find('RAND()', 6);
+
     get_header();
 
 ?>
@@ -53,28 +56,28 @@
                  <div class="work-details-buttons">
                     <ul class="clear">
                         <li class="previous">
-                            <a class="button" href="#">Previous Project</a>
+                            <a class="button" href="<?php echo get_site_url(); ?>/work/<?php echo $moreWork->display('slug')?>">Previous Project</a>
                         </li>
                         <li class="more-work">
                             <a class="button" href="<?php echo get_site_url(); ?>/work">More Work</a>
                         </li>
                         <li class="next">
-                            <a class="button" href="#">Next Project</a>
+                            <a class="button" href="<?php echo get_site_url(); ?>/work/<?php echo $moreWork->display('slug')?>">Next Project</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="more-work">
-                <?php while( $moreWork->fetch()) { ?>
+            <div class="more-work clear">
+                <?php while( $moreWorkThumbs->fetch()) { ?>
                 <div class="thirds">
-                    <a href="<?php echo get_site_url(); ?>/work/<?php echo $moreWork->display('slug')?>">
+                    <a href="<?php echo get_site_url(); ?>/work/<?php echo $moreWorkThumbs->display('slug')?>">
                         <div class="slides">
-                            <img src="<?php echo $moreWork->display('front_thumbnail_image')?>"/>
-                            <img class="secondary" src="<?php echo $moreWork->display('first_image')?>"/>
-                            <img class="secondary" src="<?php echo $moreWork->display('second_image')?>"/>
+                            <img src="<?php echo $moreWorkThumbs->display('front_thumbnail_image')?>"/>
+                            <img class="secondary" src="<?php echo $moreWorkThumbs->display('first_image')?>"/>
+                            <img class="secondary" src="<?php echo $moreWorkThumbs->display('second_image')?>"/>
                         </div>
-                        <h3><?php echo $moreWork->display('title')?></h3>
-                        <p><?php echo $moreWork->display('type_of_project')?></p>
+                        <h3><?php echo $moreWorkThumbs->display('title')?></h3>
+                        <p><?php echo $moreWorkThumbs->display('type_of_project')?></p>
                     </a>
                 </div>
                 <?php }?>

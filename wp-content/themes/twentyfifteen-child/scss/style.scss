@@ -299,6 +299,188 @@ nav#mm-menu{
     }
 }
 
+/*Scroll to bottom / Back to top Button*/
+.icon-scroll-to-bottom, .icon-back-to-top{
+    position:fixed;
+    bottom:0;
+    font-size:90px;
+    right:20px;
+    cursor:pointer;
+
+    &:hover{
+        .path1:before, .path2:before{
+            color:$blue;
+        }
+    }
+}
+
+.icon-scroll-to-bottom{
+
+    .path1:before {
+    content: "\e607";
+    color: rgb(29, 29, 27);
+    }
+
+    .path2:before {
+    content: "\e608";
+    margin-left: -1em;
+    color: rgb(29, 29, 27);
+    }
+
+    .path3:before {
+    content: "\e609";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path4:before {
+    content: "\e60a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path5:before {
+    content: "\e60b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path6:before {
+    content: "\e60c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path7:before {
+    content: "\e60d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path8:before {
+    content: "\e60e";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path9:before {
+    content: "\e60f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path10:before {
+    content: "\e610";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path11:before {
+    content: "\e611";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path12:before {
+    content: "\e612";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path13:before {
+    content: "\e613";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path14:before {
+    content: "\e614";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path15:before {
+    content: "\e615";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path16:before {
+    content: "\e616";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+}
+
+.icon-back-to-top{
+    display:none;
+
+    .path1:before {
+    content: "\e617";
+    color: rgb(29, 29, 27);
+    }
+
+    .path2:before {
+    content: "\e618";
+    margin-left: -1em;
+    color: rgb(29, 29, 27);
+    }
+
+    .path3:before {
+    content: "\e619";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path4:before {
+    content: "\e61a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path5:before {
+    content: "\e61b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path6:before {
+    content: "\e61c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path7:before {
+    content: "\e61d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path8:before {
+    content: "\e61e";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path9:before {
+    content: "\e61f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path10:before {
+    content: "\e620";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+
+    .path11:before {
+    content: "\e621";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+    }
+}
+
 /*Footer*/
 .footer{
     margin:100px 0 0 0;
@@ -486,6 +668,7 @@ nav#mm-menu{
             }
         }
     }
+
     .wrapper{
         margin-top:50px;
         .heading{
@@ -504,6 +687,11 @@ nav#mm-menu{
             }
         }
     }
+
+    span.icon-back-to-top, span.icon-scroll-to-bottom{
+        display:none !important;
+    }
+
     .footer{
         .thirds{
             width:100%;

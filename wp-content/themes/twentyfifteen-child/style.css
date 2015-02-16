@@ -112,7 +112,7 @@ textarea {
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, .icon-facebook, .icomoon, .navigation li.icon-subscribe a:before {
+[class^="icon-"]:before, [class*=" icon-"]:before, .icon-facebook, .icomoon, .navigation li.icon-subscribe a:before, .icon-scroll-to-bottom, .icon-back-to-top {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -591,9 +591,25 @@ h4 {
   width: 34.166666%;
   float: left;
   position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.overview.reached-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.overview.reached-bottom .inner {
+  position: relative;
 }
 .overview .inner {
+  position: absolute;
   padding: 10px 15.853656% 0 0;
+}
+.overview .inner.fixed-overview {
+  position: fixed;
+  width: 34.166666%;
+  padding: 10px 12.5% 0 0;
+  top: 120px;
 }
 .overview h2 {
   text-align: left;
@@ -640,6 +656,13 @@ h4 {
     letter-spacing: 5px;
     line-height: 45px;
   }
+
+  .wrapper .overview .inner.fixed-overview {
+    margin-left: 20px;
+  }
+  .wrapper .overview .inner.inner-reached-bottom {
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 960px) {
   .white-text-box {
@@ -652,6 +675,32 @@ h4 {
   .white-text-box .inner h1 {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .introduction-image {
+    margin-bottom: 50px;
+  }
+
+  .wrapper .overview {
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper .overview.reached-bottom {
+    position: static;
+  }
+  .wrapper .overview .inner, .wrapper .overview .inner.fixed-overview, .wrapper .overview .inner-reached-bottom {
+    position: static;
+    width: 100%;
+  }
+  .wrapper .overview .button {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .work-details-buttons {
+    margin: 0;
+  }
+  .wrapper .project-images {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -717,6 +766,17 @@ h4 {
     line-height: 13px;
   }
 
+  .project-images {
+    margin-bottom: 0;
+  }
+
+  .overview {
+    margin-bottom: 0px;
+  }
+
+  .introduction {
+    width: 90%;
+  }
   .introduction .logo {
     width: 30%;
   }
@@ -1222,6 +1282,156 @@ nav#mm-menu ul li a {
   display: none;
 }
 
+/*Scroll to bottom / Back to top Button*/
+.icon-scroll-to-bottom, .icon-back-to-top {
+  position: fixed;
+  bottom: 0;
+  font-size: 90px;
+  right: 20px;
+  cursor: pointer;
+}
+.icon-scroll-to-bottom:hover .path1:before, .icon-scroll-to-bottom:hover .path2:before, .icon-back-to-top:hover .path1:before, .icon-back-to-top:hover .path2:before {
+  color: #3355ff;
+}
+
+.icon-scroll-to-bottom .path1:before {
+  content: "\e607";
+  color: #1d1d1b;
+}
+.icon-scroll-to-bottom .path2:before {
+  content: "\e608";
+  margin-left: -1em;
+  color: #1d1d1b;
+}
+.icon-scroll-to-bottom .path3:before {
+  content: "\e609";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path4:before {
+  content: "\e60a";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path5:before {
+  content: "\e60b";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path6:before {
+  content: "\e60c";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path7:before {
+  content: "\e60d";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path8:before {
+  content: "\e60e";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path9:before {
+  content: "\e60f";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path10:before {
+  content: "\e610";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path11:before {
+  content: "\e611";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path12:before {
+  content: "\e612";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path13:before {
+  content: "\e613";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path14:before {
+  content: "\e614";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path15:before {
+  content: "\e615";
+  margin-left: -1em;
+  color: white;
+}
+.icon-scroll-to-bottom .path16:before {
+  content: "\e616";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-back-to-top {
+  display: none;
+}
+.icon-back-to-top .path1:before {
+  content: "\e617";
+  color: #1d1d1b;
+}
+.icon-back-to-top .path2:before {
+  content: "\e618";
+  margin-left: -1em;
+  color: #1d1d1b;
+}
+.icon-back-to-top .path3:before {
+  content: "\e619";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path4:before {
+  content: "\e61a";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path5:before {
+  content: "\e61b";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path6:before {
+  content: "\e61c";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path7:before {
+  content: "\e61d";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path8:before {
+  content: "\e61e";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path9:before {
+  content: "\e61f";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path10:before {
+  content: "\e620";
+  margin-left: -1em;
+  color: white;
+}
+.icon-back-to-top .path11:before {
+  content: "\e621";
+  margin-left: -1em;
+  color: white;
+}
+
 /*Footer*/
 .footer {
   margin: 100px 0 0 0;
@@ -1399,6 +1609,10 @@ nav#mm-menu ul li a {
   .wrapper .heading p {
     width: 80%;
     margin-bottom: 50px;
+  }
+
+  span.icon-back-to-top, span.icon-scroll-to-bottom {
+    display: none !important;
   }
 
   .footer .thirds {

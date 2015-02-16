@@ -112,9 +112,29 @@
     width:34.166666%;
     float:left;
     position:relative;
+    -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+     &.reached-bottom{
+        position:absolute;
+        bottom:0;
+
+        .inner{
+            position:relative;
+        }
+    }
 
     .inner{
+        position:absolute;
         padding:10px 15.853656% 0 0;
+
+        &.fixed-overview{
+            position:fixed;
+            width:34.166666%;
+            padding:10px 12.5% 0 0;
+            top:120px;
+        }
+
     }
 
     h2{
@@ -172,6 +192,19 @@
             }
         }
     }
+    .wrapper{
+        .overview{
+            .inner{
+                &.fixed-overview{
+                    margin-left:20px;
+                }
+
+                &.inner-reached-bottom{
+                    margin-left:0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:960px){
@@ -185,6 +218,41 @@
                 font-size:30px;
                 line-height:35px;
             }
+        }
+    }
+
+    .introduction-image{
+        margin-bottom:50px;
+    }
+
+
+    .wrapper{
+
+        .overview{
+            width:100%;
+            margin:0;
+
+            &.reached-bottom{
+                position:static;
+            }
+
+            .inner, .inner.fixed-overview, .inner-reached-bottom{
+                position:static;
+                width:100%;
+            }
+
+            .button{
+                width:100%;
+                text-align:center;
+            }
+        }
+
+        .work-details-buttons{
+            margin:0;
+        }
+
+        .project-images{
+            width:100%;
         }
     }
 }
@@ -261,7 +329,16 @@
         }
     }
 
+    .project-images{
+        margin-bottom:0;
+    }
+
+    .overview{
+        margin-bottom:0px;
+    }
+
     .introduction{
+        width:90%;
         .logo{
             width:30%;
         }
