@@ -1,0 +1,26 @@
+.error404{
+    .page-header{
+        padding:100px 0;
+    }
+    .page-title{
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and(max-width:600px){
+    .error404{
+        .page-header{
+            padding:100px 20px;
+
+            h1.page-title{
+                font-size:40px;
+                letter-spacing:3px;
+                line-height:45px;
+            }
+            h2{
+                font-size:20px;
+                line-height:25px;
+            }
+         }
+    }
+}
