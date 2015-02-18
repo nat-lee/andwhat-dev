@@ -3,6 +3,7 @@
     position:relative;
     width:100%;
     padding:0 0 34% 0;
+    margin-top:117px;
    img{
         width:100%;
         height:auto;
@@ -24,9 +25,9 @@
         li{
             display:inline-block;
             @extend.oswald-light;
-            font-size:18px;
-            line-height:23px;
-            letter-spacing:2px;
+            font-size:1.125rem;
+            line-height:1.563rem;
+            letter-spacing:0.125rem;
             text-transform:uppercase;
             padding:28px 0;
             &:first-child{
@@ -38,7 +39,8 @@
             }
             &.active, &:hover{
                 a{
-                    text-decoration:line-through;
+                    border-bottom:2px solid $blue;
+                    padding-bottom:3px;
                     color:$blue;
                 }
             }
@@ -79,8 +81,8 @@
         }
 
         h3{
-            font-size:19px;
-            line-height:24px;
+            font-size:1.19rem;
+            line-height:1.625rem;
             margin-bottom:20px;
 
             span{
@@ -97,8 +99,8 @@
         }
 
         h2{
-            font-size:50px;
-            line-height:55px;
+            font-size:3.12rem;
+            line-height:3.5625rem;
             letter-spacing:4px;
             margin:0 0 30px 0;
             &:after{
@@ -136,13 +138,13 @@
         .thirds{
             .inner{
                 h3{
-                    font-size:14px;
-                    line-height:19px;
+                    font-size:0.875rem;
+                    line-height:1.313rem;
                     margin-bottom:10px;
                 }
                 h2{
-                    font-size:30px;
-                    line-height:35px;
+                    font-size:1.875rem;
+                    line-height:2.3125rem;
                     margin-bottom:15px;
                 }
             }
@@ -188,8 +190,8 @@
         height:auto;
         ul{
             li{
-                font-size:14px;
-                line-height:19px;
+                font-size:0.875rem;
+                line-height:1.375rem;
                 width:100%;
                 padding:20px 0;
                 a{

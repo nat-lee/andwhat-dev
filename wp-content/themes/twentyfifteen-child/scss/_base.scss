@@ -10,8 +10,8 @@ body{
     background:$cream;
     color:$black;
     @extend.crimson;
-    font-size:16px;
-    line-height:21px;
+    font-size:125.5%; //18px default
+    line-height:138.9%;//25px
 }
 
 a{
@@ -26,9 +26,9 @@ a{
     border:4px solid $blue;
     padding:10px 25px;
     @extend.oswald;
-    font-size:17px;
+    font-size:1.06rem;
     text-transform:uppercase;
-    letter-spacing:2px;
+    letter-spacing:0.11rem;
     color:$blue;
     cursor:pointer;
     display:inline-block;
@@ -42,8 +42,8 @@ a{
 }
 
 p{
-    font-size:16px;
-    line-height:21px;
+    font-size:1.13rem;
+    line-height:1.56rem;
     color:$black;
     @extend.crimson;
     margin-bottom:20px;
@@ -58,20 +58,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size:98px;
-    letter-spacing:9px;
+    font-size:6.125rem;
+    letter-spacing:0.56rem;
     @extend.oswald;
     text-transform:uppercase;
     text-align:center;
-    line-height:103px;
+    line-height:6.44rem;
     margin-top:30px;
 }
 
 h2{
-    font-size:30px;
-    line-height:35px;
+    font-size:1.875rem;
+    line-height:2.31rem;
     color:$black;
-    letter-spacing:3px;
+    letter-spacing:0.19rem;
     @extend.oswald;
     text-transform:uppercase;
     text-align:center;
@@ -89,20 +89,20 @@ h2{
 }
 
 h3{
-    font-size:25px;
-    line-height:30px;
+    font-size:1.56rem;
+    line-height:2.31rem;
     color:$black;
-    letter-spacing:3px;
+    letter-spacing:0.19rem;
     @extend.oswald;
     text-transform:uppercase;
     text-align:center;
 }
 
 h4{
-    font-size:14px;
-    line-height:19px;
+    font-size:0.875rem;
+    line-height:1.31rem;
     color:$black;
-    letter-spacing:2px;
+    letter-spacing:0.13rem;
     @extend.oswald-light;
     text-transform:uppercase;
     text-align:center;
@@ -149,8 +149,8 @@ h4{
     }
 
     p{
-        font-size:16px;
-        line-height:21px;
+        font-size:1.125rem;
+        line-height:1.688rem;
         text-align:center;
     }
 }
@@ -158,8 +158,8 @@ h4{
 /*Media Queries*/
 @media only screen and (max-width:768px){
     h3{
-        font-size:20px;
-        line-height:25px;
+        font-size:1.25rem;
+        line-height:1.688rem;
     }
 
     .row{
@@ -173,8 +173,8 @@ h4{
         }
 
         p{
-            font-size:15px;
-            line-height:20px;
+            font-size:0.938rem;
+            line-height:1.69rem;
         }
     }
 }

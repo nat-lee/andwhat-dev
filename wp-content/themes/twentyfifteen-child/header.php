@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 <?php dynamic_sidebar( 'subscribe-sidebar' );?>
-<div class="navigation clear">
+<div class="navigation main-pages clear">
     <a href="#menu" class="icon-menu"></a>
     <a href="<?php echo get_site_url(); ?>" class="icon-andwhat"></a>
     <nav id="menu" class="clear">

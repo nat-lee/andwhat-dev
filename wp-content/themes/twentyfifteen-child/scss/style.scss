@@ -24,18 +24,27 @@
 
 //andwhat logo
 .icon-andwhat{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+
     &:before {
         content: "\e606";
-        font-size:90px;
+        font-size: 5.625rem;
         position:absolute;
         top:12px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
     }
     &.fixed-navigation{
         &:before{
             position:fixed;
-            font-size:55px;
+            font-size:3.438rem;
             left:15px;
-            top:13px;
+            top:12px;
         }
     }
 }
@@ -61,7 +70,7 @@
 
         .close{
             font-family:"Helvetica Neue", "Helvetica", Arial;
-            font-size:30px;
+            font-size:1.875rem;
             color:$grey;
             font-weight:100;
             float:left;
@@ -72,8 +81,8 @@
         }
 
         p{
-            font-size:18px;
-            line-height:23px;
+            font-size:1.125rem;
+            line-height:1.563rem;
             float:left;
             margin-left:20px;
         }
@@ -113,7 +122,7 @@
             input.email{
                 background:none;
                 border:none;
-                font-size:18px;
+                font-size:1.125rem;
                 color:$black;
                 @extend.crimson;
 
@@ -143,7 +152,7 @@
             }
 
             .button{
-                font-size:15px;
+                font-size:0.938rem;
                 border:0;
                 background:none;
                 padding:0;
@@ -159,13 +168,16 @@
 
 //navigation
 .navigation{
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
     overflow:hidden;
+    position:fixed;
     width:100%;
     z-index:2000;
     padding:0 2.5%;
-    top:30px;
+    top:0;
     display:block;
     height:117px;
     background:white;
@@ -176,7 +188,7 @@
         height:80px;
 
         ul{
-            top:29px;
+            top:27px;
         }
     }
 
@@ -194,9 +206,9 @@
 
         li{
             @extend.oswald-light;
-            font-size:18px;
+            font-size:1.125rem;
             text-transform:uppercase;
-            letter-spacing:2px;
+            letter-spacing:0.125rem;
             display:inline-block;
 
             &.home, &.close{
@@ -209,7 +221,8 @@
 
             &:hover a, &.current_page_item a{
                 color:$blue;
-                text-decoration:line-through;
+                border-bottom:2px solid $blue;
+                padding-bottom:3px;
             }
         }
 
@@ -239,7 +252,7 @@
     display:none;
     position:absolute;
     right:0;
-    font-size:52px;
+    font-size:3.25rem;
     top:30px;
     color:$black;
     z-index:10000;
@@ -261,14 +274,14 @@ nav#mm-menu{
 
             &.close a{
                 color:$light-grey;
-                font-size:12px;
+                font-size:0.75rem;
             }
 
             a{
                 @extend.oswald;
                 text-transform:uppercase;
-                letter-spacing:2px;
-                font-size:14px;
+                letter-spacing:0.125rem;
+                font-size:0.875rem;
                 color:white;
                 padding:20px 10px 20px 20px;
             }
@@ -278,7 +291,7 @@ nav#mm-menu{
 
 /*Wrapper*/
 .wrapper{
-    margin-top:100px;
+    margin-top:217px;
     overflow:hidden;
 
     .container{
@@ -308,6 +321,10 @@ nav#mm-menu{
         .thirds{
             margin:0px 0 20px 0;
 
+            &:hover{
+                opacity: 0.85;
+            }
+
             img{
                 height:auto;
 
@@ -327,7 +344,7 @@ nav#mm-menu{
 .icon-scroll-to-bottom, .icon-back-to-top{
     position:fixed;
     bottom:-1px;
-    font-size:90px;
+    font-size:5.625rem;
     right:20px;
     cursor:pointer;
 
@@ -533,14 +550,14 @@ nav#mm-menu{
 
         h3{
             text-align:left;
-            font-size:20px;
-            line-height:25px;
+            font-size:1.25rem;
+            line-height:1.688rem;
             margin-top:0;
         }
 
         p{
-            font-size:15px;
-            line-height:20px;
+            font-size:0.938rem;
+            line-height:1.375rem;
             text-align:left;
             margin:10px 0 0 0;
         }
@@ -557,14 +574,14 @@ nav#mm-menu{
 
         li{
             list-style:none;
-            font-size:15px;
-            line-height:20px;
+            font-size:0.938rem;
+            line-height:1.375rem;
             position:relative;
 
             .icon-phone, .icon-email{
                 padding-left:35px;
                 &:before{
-                    font-size:25px;
+                    font-size:1.563rem;
                     position:absolute;
                     left:0;
                     color:$blue;
@@ -572,13 +589,13 @@ nav#mm-menu{
             }
 
             .icon-facebook{
-                font-size:25px;
+                font-size:1.563rem;
                 margin:-5px auto 0 auto;
                 padding-top:0;
                 display:block;
 
                 .text{
-                    font-size:15px;
+                    font-size:0.9375rem;
                     @extend.crimson;
                     margin-left:10px;
                 }
@@ -612,7 +629,7 @@ nav#mm-menu{
 }
 
 .disclaimer{
-    font-size:11px;
+    font-size:0.688rem;
     text-align:center;
     padding:10px 0;
     margin:0 auto;
@@ -681,8 +698,8 @@ nav#mm-menu{
         }
         .inner{
             p{
-                font-size:13px;
-                line-height:18px;
+                font-size:0.813rem;
+                line-height:1.25rem;
                 &.text{
                     padding-top:35px;
                 }
@@ -692,22 +709,22 @@ nav#mm-menu{
                 margin-left:-40%;
                 top:70px;
                input.email{
-                    font-size:14px;
+                    font-size:0.875rem;
                 }
             }
         }
     }
 
     .wrapper{
-        margin-top:50px;
+        margin-top:167px;
         .heading{
             h1{
-                font-size:60px;
-                line-height:65px;
+                font-size:3.75rem;
+                line-height:4.188rem;
             }
             h2{
-                font-size:20px;
-                line-height:25px;
+                font-size:1.25rem;
+                line-height:1.688rem;
                 margin-bottom:0;
             }
             p{

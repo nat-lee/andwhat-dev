@@ -1,6 +1,7 @@
 /*header images*/
 
 .header{
+    margin-top:117px;
     display:block;
     padding:15% 0;
     position:relative;
@@ -42,6 +43,12 @@
     }
 }
 
+.pod-page-work-w{
+    .wrapper{
+        margin-top:100px;
+    }
+}
+
 .white-text-box{
     width:auto;
     position:absolute;
@@ -71,8 +78,8 @@
     }
 
     h1{
-        font-size:60px;
-        line-height:65px;
+        font-size:3.75rem;
+        line-height:4.188rem;
         margin:0 auto;
     }
     h4{
@@ -217,17 +224,20 @@
     .white-text-box{
         .inner{
             h1{
-                font-size:40px;
-                letter-spacing:5px;
-                line-height:45px;
+                font-size:2.5rem;
+                letter-spacing:0.313rem;
+                line-height:2.938rem;
             }
         }
     }
-    .wrapper{
+    .pod-page-work-w .wrapper{
         .overview{
             .inner{
                 &.inner-reached-bottom{
                     margin-left:0;
+                }
+                h2:after{
+                    margin-left:20px;
                 }
             }
         }
@@ -235,6 +245,14 @@
 }
 
 @media only screen and (max-width:960px){
+    .header{
+        &.aline, &.anhha, &.pfeffer, &.mariana-hardwick,&.sven-anton, &.caterina-belluardo, &.barbara-bonner, &.malle, &.rotring{
+            background-size:cover;
+            background-position: center;
+            background-attachment:scroll;
+        }
+    }
+
     .white-text-box{
         border:0;
         padding:0;
@@ -242,8 +260,8 @@
         .inner{
             padding:30px 50px;
             h1{
-                font-size:30px;
-                line-height:35px;
+                font-size:1.875rem;
+                line-height:2.188rem;
             }
         }
     }
@@ -253,12 +271,12 @@
     }
 
 
-    .wrapper{
+    .pod-page-work-w .wrapper{
 
         .overview{
             width:100%;
             max-width:100%;
-            margin:0;
+            margin:0 0 40px 0;
 
             &.fixed-overview, &.reached-bottom, .inner{
                 position:static;
@@ -294,9 +312,9 @@
         .inner{
 
             h1{
-                font-size:20px;
-                line-height:25px;
-                letter-spacing:3px;
+                font-size:1.25rem;
+                line-height:1.688rem;
+                letter-spacing:0.188rem;
             }
         }
     }
@@ -309,8 +327,11 @@
         margin:0 auto 60px auto;
     }
 
-    .overview{
-        width:100%;
+    .pod-page-work-w .wrapper{
+        .overview{
+            width:100%;
+            margin:0;
+        }
     }
 
     .project-images{
@@ -335,33 +356,35 @@
 
 @media only screen and (max-width:600px){
     .header{
-        &.aline, &.anhha, &.pfeffer, &.mariana-hardwick,&.sven-anton, &.caterina-belluardo, &.barbara-bonner, &.malle, &.rotring{
-            background-size:cover;
-            background-position: center;
-            background-attachment:scroll;
-        }
-    }
-    .header .white-text-box{
-        width:80%;
-        .inner{
-            padding:5% 5%;
+        padding:25% 0;
+        .white-text-box{
+                width:80%;
+            .inner{
+                padding:5% 5%;
 
-            h1{
-            font-size:14px;
-            letter-spacing:4px;
-            line-height:20px;
+                h1{
+                font-size:0.875rem;
+                letter-spacing:0.2rem;
+                line-height:1.313rem;
 
-            }
-            h4{
-                margin-top:0;
-                font-size:8px;
-                line-height:13px;
+                }
+                h4{
+                    margin-top:0;
+                    font-size:0.5rem;
+                    line-height:1rem;
+                }
             }
         }
     }
 
     .project-images{
         margin-bottom:0;
+    }
+
+    .pod-page-work-w{
+        .wrapper{
+            margin-top:50px;
+        }
     }
 
     .overview{
