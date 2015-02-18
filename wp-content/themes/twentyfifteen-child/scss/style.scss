@@ -34,7 +34,7 @@
         &:before{
             position:fixed;
             font-size:55px;
-            left:5px;
+            left:15px;
             top:13px;
         }
     }
@@ -65,6 +65,7 @@
             color:$grey;
             font-weight:100;
             float:left;
+            text-decoration:none;
             &:hover{
                 color:$blue;
             }
@@ -99,6 +100,8 @@
                 position:absolute;
                 z-index:100;
                 width:100%;
+                cursor:pointer;
+
                 p{
                     margin:0;
                     width:100%;
@@ -113,6 +116,10 @@
                 font-size:18px;
                 color:$black;
                 @extend.crimson;
+
+                &:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px $cream inset;
+                }
 
                 &:focus{
                     outline:none;
@@ -143,6 +150,7 @@
                 margin:0;
                 position:absolute;
                 right:0;
+                text-decoration:none;
             }
 
         }
@@ -191,6 +199,10 @@
             letter-spacing:2px;
             display:inline-block;
 
+            &.home, &.close{
+                display:none;
+            }
+
             &:first-child a{
                 margin-left:0;
             }
@@ -204,6 +216,7 @@
         a{
             display:inline-block;
             margin-left:40px;
+            text-decoration:none;
         }
     }
 
@@ -244,6 +257,13 @@
 nav#mm-menu{
     ul{
         li{
+            text-align:center;
+
+            &.close a{
+                color:$light-grey;
+                font-size:12px;
+            }
+
             a{
                 @extend.oswald;
                 text-transform:uppercase;
@@ -294,6 +314,10 @@ nav#mm-menu{
                 &.secondary{
                     display:none;
                 }
+            }
+
+            a{
+                text-decoration:none;
             }
         }
     }
@@ -487,6 +511,10 @@ nav#mm-menu{
     width:100%;
     background:white;
 
+    a{
+        text-decoration:none;
+    }
+
     .container{
         overflow:hidden;
     }
@@ -609,7 +637,7 @@ nav#mm-menu{
 }
 
 /*wrapper*/
-@media only screen and (max-width:900px){
+@media only screen and (max-width:960px){
     .subscribe-form{
         height:120px;
         .inner{
@@ -653,7 +681,8 @@ nav#mm-menu{
         }
         .inner{
             p{
-                font-size:14px;
+                font-size:13px;
+                line-height:18px;
                 &.text{
                     padding-top:35px;
                 }
@@ -697,8 +726,25 @@ nav#mm-menu{
             width:100%;
             border-right:0;
             border-top:1px solid $light-grey;
+            .inner{
+                padding:60px 0;
+            }
             &:first-child{
                 border-top:0;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:320px){
+    .subscribe-form{
+        height:160px;
+        .inner{
+            p{
+                padding-top:40px;
+            }
+            .epm-sign-up-form{
+                top:85px;
             }
         }
     }

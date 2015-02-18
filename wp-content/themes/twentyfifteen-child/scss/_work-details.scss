@@ -125,32 +125,38 @@
 }
 
 .overview{
-    width:34.166666%;
+    width:30%;
+    max-width:410px;
     float:left;
     position:relative;
     -webkit-transition: all 0.5s;
-        transition: all 0.5s;
+    transition: all 0.5s;
 
-     &.reached-bottom{
-        position:absolute;
-        bottom:0;
+    &.fixed-overview{
+        position:fixed;
+        top:120px;
 
         .inner{
-            position:relative;
+            max-width:360px;
+
+            h2:after{
+                margin-left:0;
+            }
+        }
+    }
+
+    &.reached-bottom{
+        position:absolute;
+        bottom:0;
+        top:0;
+
+        .inner{
+            bottom:0;
         }
     }
 
     .inner{
         position:absolute;
-        padding:10px 15.853656% 0 0;
-
-        &.fixed-overview{
-            position:fixed;
-            width:34.166666%;
-            padding:10px 12.5% 0 0;
-            top:120px;
-        }
-
     }
 
     h2{
@@ -158,8 +164,17 @@
         margin-bottom:30px;
         &:after{
             left:0;
-            margin-left:20px;
+            margin-left:0;
         }
+    }
+    .button-wrapper{
+       width:100%;
+       display:block;
+       float:left;
+
+       .button{
+        margin:0;
+       }
     }
 }
 
@@ -211,10 +226,6 @@
     .wrapper{
         .overview{
             .inner{
-                &.fixed-overview{
-                    margin-left:20px;
-                }
-
                 &.inner-reached-bottom{
                     margin-left:0;
                 }
@@ -246,15 +257,19 @@
 
         .overview{
             width:100%;
+            max-width:100%;
             margin:0;
 
-            &.reached-bottom{
+            &.fixed-overview, &.reached-bottom, .inner{
                 position:static;
             }
 
-            .inner, .inner.fixed-overview, .inner-reached-bottom{
-                position:static;
-                width:100%;
+            .inner{
+                max-width:100%;
+            }
+
+            .button-wrapper{
+                margin:10px 0 30px 0;
             }
 
             .button{

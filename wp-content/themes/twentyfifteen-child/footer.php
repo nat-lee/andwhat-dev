@@ -16,10 +16,13 @@
                 <h3>Get In Touch</h3>
                 <ul class="get-in-touch">
                     <li >
-                        <a class="icon-email" href="what@andwhat.com">what@andwhat.com</a>
+                        <a class="icon-email" href="mailto:what@andwhat.com">what@andwhat.com</a>
                     </li>
                     <li>
-                        <p class="icon-phone">0797 900 3349</p>
+                        <p class="icon-phone">+44 (0) 203 287 8755</p>
+                    </li>
+                    <li>
+                        <p class="icon-phone">+44 (0) 797 900 3349</p>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/andwhatdotcom" target="-blank" class="icon-facebook clear"><span class="path1"></span><span class="path2"></span><span class="text">Find us on Facebook</span></a>

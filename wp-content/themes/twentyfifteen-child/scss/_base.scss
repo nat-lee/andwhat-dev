@@ -1,3 +1,7 @@
+*:focus{
+   outline:0;
+}
+
 html, body{
     height:100%;
 }
@@ -11,8 +15,8 @@ body{
 }
 
 a{
-    text-decoration:none;
     color:$black;
+    text-decoration:none;
     &:hover{
         color:$blue;
     }
@@ -29,6 +33,7 @@ a{
     cursor:pointer;
     display:inline-block;
     margin-top:20px;
+    text-decoration:none;
 
     &:hover{
         color:$black;
@@ -42,6 +47,10 @@ p{
     color:$black;
     @extend.crimson;
     margin-bottom:20px;
+
+    a{
+        text-decoration:underline;
+    }
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -123,7 +132,7 @@ h4{
     float:left;
 
     a{
-        display:block;
+        display:inline-block;
         &:hover{
             h3{
                 color:$blue;
@@ -136,7 +145,7 @@ h4{
     }
 
     h3{
-        margin-top:35px;
+        margin-top:15px;
     }
 
     p{

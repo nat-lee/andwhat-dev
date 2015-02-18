@@ -15,9 +15,20 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
         clone: true
     });
 
+    //close button on mobile menu
+    $('.close a').click(function(){
+    //alert('click);
+    $('#mm-nav_primary').trigger("close.mm");
+    });
+
     //fixed homepage navigation
     $('.home .wrapper').waypoint(function(direction){
         $('.navigation.home, .andwhat-triangle, .icon-andwhat, .icon-menu').toggleClass('home-fixed-navigation', direction === 'down');
+    })
+
+    //all other fixed navigation
+    $('.andwhat-we-do-header').waypoint(function(direction){
+        $('.navigation, .icon-andwhat, .icon-menu').toggleClass('fixed-navigation', direction === 'down');
     })
 
     //all other fixed navigation
@@ -26,26 +37,25 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
     })
 
     //overview fixed
-    $('.overview .inner').waypoint(function(direction){
-        $('.overview .inner').toggleClass('fixed-overview', direction === 'down');
+    $('.overview').waypoint(function(direction){
+        $('.overview').toggleClass('fixed-overview', direction === 'down');
     })
 
     $('.work-details-buttons').waypoint({
-        offset:$('.overview .inner').height()+200,
+        offset:$('.overview').height()+ 550,
         handler:(function(direction){
-            $('.overview .inner').toggleClass('fixed-overview');
-            $('.overview .inner').toggleClass('inner-reached-bottom');
+            $('.overview').toggleClass('fixed-overview');
             $('.overview').toggleClass('reached-bottom');
         })
     });
 
     //scroll to bottom button
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 200) {
             $('span.icon-back-to-top').fadeIn();
-            $('span.icon-scroll-to-bottom').fadeOut();
+            //$('span.icon-scroll-to-bottom').fadeOut();
         } else {
-            $('span.icon-scroll-to-bottom').fadeIn();
+            //$('span.icon-scroll-to-bottom').fadeIn();
             $('span.icon-back-to-top').fadeOut();
 
         }
@@ -68,6 +78,11 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
     });
     $('a.close').click(function(){
         $('.subscribe-form').slideUp('slow');
+    });
+
+    //subscribe from error message
+    $('.epm-sign-up-form').click(function(){
+        $('.epm-message p').css('display','none');
     });
 
      // configure the cycle plugin
@@ -113,6 +128,7 @@ var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
      $(".contact-link").fancybox({
         'type' :'iframe',
         'width':'100%',
+        'height': 'auto',
         'padding':0,
         'margin':0,
          'href' :'http://nat.local/andwhat-dev/contact/'

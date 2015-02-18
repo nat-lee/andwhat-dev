@@ -4,10 +4,11 @@
 */
     // Create and find in one shot
     $moreWork = pods( 'project');
-    $moreWork->find('RAND()', 6);
+    $moreWork->find('RAND()', -1);
 
     $moreWorkThumbs = pods('project');
     $moreWorkThumbs->find('RAND()', 6);
+
 
     get_header();
 
@@ -27,8 +28,8 @@
                 </div>
             </div>
         </div>
-        <span class="icon-scroll-to-bottom"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span></span>
-<span class="icon-back-to-top"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
+        <!-- <span class="icon-scroll-to-bottom"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span></span> -->
+        <span class="icon-back-to-top"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
         <div class="wrapper">
             <div class="inner clear">
                 <div class="introduction">
@@ -39,7 +40,7 @@
                 </div>
                 <img class="introduction-image" src="<?php echo $work->display('introduction_image');?>"/>
                 <div class="project-content clear">
-                    <div class="overview" id="overview">
+                    <div class="overview clear" id="overview">
                         <div class="inner">
                             <h2>Overview</h2>
                             <p>

@@ -16,7 +16,7 @@ if(is_user_logged_in()) {
 <div class="subscribe-form">
     <div class="inner">
         <a href="#" class="close">X</a>
-        <p class="text">Subscribe to our newsletter to see what we’ve been up to</p>
+        <p class="text">Subscribe to our newsletter for accessional news & updates...</p>
         <form class="epm-sign-up-form" name="epm-sign-up-form" action="#" method="post">
             <?php if(epm_get_option('display_name_fields')) : ?>
 

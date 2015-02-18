@@ -22,13 +22,25 @@
             .content{
                 padding-bottom:50px;
                 border-left:1px solid $light-grey;
+
+                &.new-york{
+                    padding:81px 0;
+                    .address{
+                        padding:0 0 40px 0;
+                    }
+                    .phone{
+                        display:none;
+                    }
+                }
             }
+        }
+
+        ul.address{
+            padding: 40px 0 0 0;
         }
 
         ul.address, ul.phone{
             margin:0 auto;
-            padding: 40px 0 0 0;
-            width:25.531914%;
 
             li{
                 text-align:center;
@@ -38,17 +50,25 @@
         }
 
         ul.phone{
-            padding:0 0 30px 0;
+            padding:20px 0 40px 0;
+
             .icon-phone{
-                margin-top:15px;
+                position:relative;
+
+                &.second{
+                    margin-top:10px;
+                }
+
+                .text{
+                    position:relative;
+                    padding-left:30px;
+                }
 
                 &:before{
                     content: "\e604";
                     font-size:22px;
                     color:$blue;
                     position:absolute;
-                    left:0;
-                    top:2px;
                 }
             }
         }
@@ -72,6 +92,7 @@
         padding-top:40px;
         display:block;
         text-align:center;
+        text-decoration:none;
 
         &:hover{
             .path1:before{
@@ -94,6 +115,7 @@
 //fancybox
 .fancybox-overlay{
     overflow:hidden !important;
+    z-index:200000;
 }
 
 .fancybox-skin .fancybox-close{
@@ -127,8 +149,13 @@
 
 @media only screen and (max-width:768px){
     .pod-page-contact{
-        .halves{
-            width:100%;
+        .contact-details{
+            .halves{
+                width:100%;
+                img{
+                    max-width:100%;
+                }
+            }
         }
     }
 }

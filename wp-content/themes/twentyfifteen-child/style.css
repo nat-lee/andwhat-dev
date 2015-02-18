@@ -155,6 +155,10 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*:focus {
+  outline: 0;
+}
+
 html, body {
   height: 100%;
 }
@@ -167,8 +171,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #262626;
+  text-decoration: none;
 }
 a:hover {
   color: #3355ff;
@@ -184,6 +188,7 @@ a:hover {
   cursor: pointer;
   display: inline-block;
   margin-top: 20px;
+  text-decoration: none;
 }
 .button:hover {
   color: #262626;
@@ -195,6 +200,9 @@ p {
   line-height: 21px;
   color: #262626;
   margin-bottom: 20px;
+}
+p a {
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -270,7 +278,7 @@ h4 {
   float: left;
 }
 .thirds a {
-  display: block;
+  display: inline-block;
 }
 .thirds a:hover h3 {
   color: #3355ff;
@@ -279,7 +287,7 @@ h4 {
   width: 100%;
 }
 .thirds h3 {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 .thirds p {
   font-size: 16px;
@@ -340,7 +348,7 @@ h4 {
 .home .icon-andwhat.home-fixed-navigation:before {
   display: block;
   top: 13px;
-  left: 5px;
+  left: 15px;
   font-size: 55px;
 }
 .home .navigation.home {
@@ -456,6 +464,9 @@ h4 {
 .home .wrapper .work-details-buttons {
   margin: 50px 0 0 0;
 }
+.home .wrapper .latest-work h2 {
+  margin-bottom: 60px;
+}
 
 @media only screen and (max-width: 960px) {
   .home .header-text-wrapper .text h1 {
@@ -476,7 +487,10 @@ h4 {
     border-bottom: 1px solid #ebebeb;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+  .home .header-image {
+    background-attachment: scroll;
+  }
   .home .header-text-wrapper .text h1 {
     font-size: 50px;
     line-height: 55px;
@@ -604,28 +618,33 @@ h4 {
 }
 
 .overview {
-  width: 34.166666%;
+  width: 30%;
+  max-width: 410px;
   float: left;
   position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+.overview.fixed-overview {
+  position: fixed;
+  top: 120px;
+}
+.overview.fixed-overview .inner {
+  max-width: 360px;
+}
+.overview.fixed-overview .inner h2:after {
+  margin-left: 0;
+}
 .overview.reached-bottom {
   position: absolute;
   bottom: 0;
+  top: 0;
 }
 .overview.reached-bottom .inner {
-  position: relative;
+  bottom: 0;
 }
 .overview .inner {
   position: absolute;
-  padding: 10px 15.853656% 0 0;
-}
-.overview .inner.fixed-overview {
-  position: fixed;
-  width: 34.166666%;
-  padding: 10px 12.5% 0 0;
-  top: 120px;
 }
 .overview h2 {
   text-align: left;
@@ -633,7 +652,15 @@ h4 {
 }
 .overview h2:after {
   left: 0;
-  margin-left: 20px;
+  margin-left: 0;
+}
+.overview .button-wrapper {
+  width: 100%;
+  display: block;
+  float: left;
+}
+.overview .button-wrapper .button {
+  margin: 0;
 }
 
 .project-images {
@@ -673,9 +700,6 @@ h4 {
     line-height: 45px;
   }
 
-  .wrapper .overview .inner.fixed-overview {
-    margin-left: 20px;
-  }
   .wrapper .overview .inner.inner-reached-bottom {
     margin-left: 0;
   }
@@ -699,14 +723,17 @@ h4 {
 
   .wrapper .overview {
     width: 100%;
+    max-width: 100%;
     margin: 0;
   }
-  .wrapper .overview.reached-bottom {
+  .wrapper .overview.fixed-overview, .wrapper .overview.reached-bottom, .wrapper .overview .inner {
     position: static;
   }
-  .wrapper .overview .inner, .wrapper .overview .inner.fixed-overview, .wrapper .overview .inner-reached-bottom {
-    position: static;
-    width: 100%;
+  .wrapper .overview .inner {
+    max-width: 100%;
+  }
+  .wrapper .overview .button-wrapper {
+    margin: 10px 0 30px 0;
   }
   .wrapper .overview .button {
     width: 100%;
@@ -839,6 +866,7 @@ h4 {
 }
 .subnavigation ul li a {
   margin-left: 50px;
+  text-decoration: none;
 }
 
 .pod-page-about .wrapper, .pod-page-about .footer {
@@ -920,29 +948,29 @@ h4 {
     margin-bottom: 15px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .about .thirds {
+@media only screen and (max-width: 960px) {
+  .pod-page-about .wrapper .container .thirds {
     width: 100%;
   }
-  .about .thirds.middle {
+  .pod-page-about .wrapper .container .thirds.middle {
     border: 0;
   }
-  .about .thirds.middle .inner {
+  .pod-page-about .wrapper .container .thirds.middle .inner {
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     border-left: 0;
     border-right: 0;
   }
-  .about .thirds .inner {
+  .pod-page-about .wrapper .container .thirds .inner {
     padding: 30px;
     width: 100%;
   }
-  .about .andwho-we-do {
+  .pod-page-about .wrapper .container .andwho-we-do {
     width: 100%;
     padding: 0 30px;
     margin: 60px auto 80px auto;
   }
-  .about .andwho-we-do .client-logos {
+  .pod-page-about .wrapper .container .andwho-we-do .client-logos {
     width: 70%;
   }
 }
@@ -996,10 +1024,20 @@ h4 {
   padding-bottom: 50px;
   border-left: 1px solid #ebebeb;
 }
+.pod-page-contact .contact-details .halves .content.new-york {
+  padding: 81px 0;
+}
+.pod-page-contact .contact-details .halves .content.new-york .address {
+  padding: 0 0 40px 0;
+}
+.pod-page-contact .contact-details .halves .content.new-york .phone {
+  display: none;
+}
+.pod-page-contact .contact-details ul.address {
+  padding: 40px 0 0 0;
+}
 .pod-page-contact .contact-details ul.address, .pod-page-contact .contact-details ul.phone {
   margin: 0 auto;
-  padding: 40px 0 0 0;
-  width: 25.531914%;
 }
 .pod-page-contact .contact-details ul.address li, .pod-page-contact .contact-details ul.phone li {
   text-align: center;
@@ -1007,18 +1045,23 @@ h4 {
   position: relative;
 }
 .pod-page-contact .contact-details ul.phone {
-  padding: 0 0 30px 0;
+  padding: 20px 0 40px 0;
 }
 .pod-page-contact .contact-details ul.phone .icon-phone {
-  margin-top: 15px;
+  position: relative;
+}
+.pod-page-contact .contact-details ul.phone .icon-phone.second {
+  margin-top: 10px;
+}
+.pod-page-contact .contact-details ul.phone .icon-phone .text {
+  position: relative;
+  padding-left: 30px;
 }
 .pod-page-contact .contact-details ul.phone .icon-phone:before {
   content: "\e604";
   font-size: 22px;
   color: #3355ff;
   position: absolute;
-  left: 0;
-  top: 2px;
 }
 .pod-page-contact .contact-details ul.buttons {
   text-align: center;
@@ -1036,6 +1079,7 @@ h4 {
   padding-top: 40px;
   display: block;
   text-align: center;
+  text-decoration: none;
 }
 .pod-page-contact .icon-facebook:hover .path1:before {
   color: #262626;
@@ -1052,6 +1096,7 @@ h4 {
 
 .fancybox-overlay {
   overflow: hidden !important;
+  z-index: 200000;
 }
 
 .fancybox-skin .fancybox-close {
@@ -1073,8 +1118,11 @@ h4 {
   }
 }
 @media only screen and (max-width: 768px) {
-  .pod-page-contact .halves {
+  .pod-page-contact .contact-details .halves {
     width: 100%;
+  }
+  .pod-page-contact .contact-details .halves img {
+    max-width: 100%;
   }
 }
 .error404 .page-header {
@@ -1107,7 +1155,7 @@ h4 {
 .icon-andwhat.fixed-navigation:before {
   position: fixed;
   font-size: 55px;
-  left: 5px;
+  left: 15px;
   top: 13px;
 }
 
@@ -1135,6 +1183,7 @@ h4 {
   color: #8a8a8a;
   font-weight: 100;
   float: left;
+  text-decoration: none;
 }
 .subscribe-form .inner .close:hover {
   color: #3355ff;
@@ -1165,6 +1214,7 @@ h4 {
   position: absolute;
   z-index: 100;
   width: 100%;
+  cursor: pointer;
 }
 .subscribe-form .inner .epm-sign-up-form .epm-error p, .subscribe-form .inner .epm-sign-up-form .epm-success p {
   margin: 0;
@@ -1177,6 +1227,9 @@ h4 {
   border: none;
   font-size: 18px;
   color: #262626;
+}
+.subscribe-form .inner .epm-sign-up-form input.email:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f6f5f0 inset;
 }
 .subscribe-form .inner .epm-sign-up-form input.email:focus {
   outline: none;
@@ -1201,6 +1254,7 @@ h4 {
   margin: 0;
   position: absolute;
   right: 0;
+  text-decoration: none;
 }
 
 .navigation {
@@ -1240,6 +1294,9 @@ h4 {
   letter-spacing: 2px;
   display: inline-block;
 }
+.navigation ul li.home, .navigation ul li.close {
+  display: none;
+}
 .navigation ul li:first-child a {
   margin-left: 0;
 }
@@ -1250,6 +1307,7 @@ h4 {
 .navigation ul a {
   display: inline-block;
   margin-left: 40px;
+  text-decoration: none;
 }
 .navigation li.icon-subscribe a {
   color: transparent;
@@ -1278,6 +1336,13 @@ h4 {
 }
 
 /*Mobile Menu*/
+nav#mm-menu ul li {
+  text-align: center;
+}
+nav#mm-menu ul li.close a {
+  color: #ebebeb;
+  font-size: 12px;
+}
 nav#mm-menu ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1316,6 +1381,9 @@ nav#mm-menu ul li a {
 }
 .wrapper .work-thumbnails .thirds img.secondary, .wrapper .more-work .thirds img.secondary {
   display: none;
+}
+.wrapper .work-thumbnails .thirds a, .wrapper .more-work .thirds a {
+  text-decoration: none;
 }
 
 /*Scroll to bottom / Back to top Button*/
@@ -1474,6 +1542,9 @@ nav#mm-menu ul li a {
   width: 100%;
   background: white;
 }
+.footer a {
+  text-decoration: none;
+}
 .footer .container {
   overflow: hidden;
 }
@@ -1575,7 +1646,7 @@ nav#mm-menu ul li a {
   }
 }
 /*wrapper*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   .subscribe-form {
     height: 120px;
   }
@@ -1616,7 +1687,8 @@ nav#mm-menu ul li a {
     margin-left: -7px;
   }
   .subscribe-form .inner p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 18px;
   }
   .subscribe-form .inner p.text {
     padding-top: 35px;
@@ -1656,7 +1728,21 @@ nav#mm-menu ul li a {
     border-right: 0;
     border-top: 1px solid #ebebeb;
   }
+  .footer .thirds .inner {
+    padding: 60px 0;
+  }
   .footer .thirds:first-child {
     border-top: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .subscribe-form {
+    height: 160px;
+  }
+  .subscribe-form .inner p {
+    padding-top: 40px;
+  }
+  .subscribe-form .inner .epm-sign-up-form {
+    top: 85px;
   }
 }
